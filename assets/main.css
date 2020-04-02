@@ -90,27 +90,33 @@ footer {
     .carousel-setup button:hover {
       color: #992369; }
 
-.aboutus {
+.aboutpanel {
   color: white;
   background: #992369;
   padding: 1rem 0; }
-  .aboutus .aboutus__inner .heading #about-us {
+  .aboutpanel .aboutus__inner .heading #about-us {
     display: flex;
     align-items: center;
     color: white; }
-    .aboutus .aboutus__inner .heading #about-us .icon__white img {
+    .aboutpanel .aboutus__inner .heading #about-us .icon__white img {
       width: 30px; }
-    .aboutus .aboutus__inner .heading #about-us h3 {
+    .aboutpanel .aboutus__inner .heading #about-us h3 {
       margin-left: 0.5rem;
       font-size: 2rem; }
-  .aboutus .aboutus__inner #display__content {
+  .aboutpanel .aboutus__inner #display__content2,
+  .aboutpanel .aboutus__inner #display__content {
     display: none; }
-    .aboutus .aboutus__inner #display__content p {
+    .aboutpanel .aboutus__inner #display__content2 p,
+    .aboutpanel .aboutus__inner #display__content p {
       margin: 0;
       font-size: 1.3rem;
       font-weight: lighter; }
-  .aboutus .aboutus__inner #display__content:target {
+  .aboutpanel .aboutus__inner #display__content2,
+  .aboutpanel .aboutus__inner #display__content:target {
     display: block; }
+
+.orange {
+  background: #f69331; }
 
 body {
   font-size: 62.5%;

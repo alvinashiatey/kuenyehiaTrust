@@ -1,4 +1,4 @@
-.aboutus {
+.aboutpanel {
   color: white;
   background: $kr-color;
   padding: 1rem 0;
@@ -19,6 +19,7 @@
         }
       }
     }
+    #display__content2,
     #display__content {
       display: none;
       p {
@@ -27,8 +28,13 @@
         font-weight: lighter;
       }
     }
+    #display__content2,
     #display__content:target {
       display: block;
     }
   }
+}
+
+.orange {
+  background: $ko-color;
 }
