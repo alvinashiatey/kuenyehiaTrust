@@ -1,0 +1,21 @@
+@import "./components/header.scss";
+@import "./components/banner.scss";
+@import "./components/footer.scss";
+@import "./components/carousel.scss";
+
+body {
+  font-size: 62.5%;
+  font-family: helvetic, sans-serif;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

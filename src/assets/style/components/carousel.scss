@@ -1,0 +1,36 @@
+.carousel-setup {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0;
+  .carousel-container {
+    width: 65vw;
+    overflow: hidden;
+    margin: 2rem auto 0 auto;
+    .carousel {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      .slide {
+        img {
+          width: 65vw;
+        }
+        .description {
+          font-weight: lighter;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  button {
+    border: none;
+    padding: 0.5rem;
+    text-decoration: none;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: $ko-color;
+    &:hover {
+      color: $kr-color;
+    }
+  }
+}

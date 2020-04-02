@@ -1,0 +1,37 @@
+.info-banner {
+  margin: 7rem 0 3rem 0;
+  border-top: 1.5px solid $kr-color;
+  padding-top: 3rem;
+  .banner-wrapper {
+    .banner-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0.9rem;
+      .banner-element {
+        width: 22vw;
+        .heading {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          h3 {
+            font-size: 1.3rem;
+            margin: 0 0 0 0.8rem;
+          }
+          img {
+            margin: 0;
+            width: 1.2rem;
+          }
+        }
+        p {
+          font-weight: lighter;
+          font-size: 0.7rem;
+          span {
+            a {
+              color: $kr-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
     <title>{{ pageTitle or siteData.name }}</title>
   </head>
   <body>
+   <div class="wrapper">
   <header class="nav">
         <div class="inner-nav-wrap">
           <div class="logo">
-            <a href="">
+            <a href="/">
               <img src="./assets/logo.png" alt="" />
             </a>
           </div>
           <nav>
             <ul class="links">
               <li><a href=""> PRIZE </a></li>
-              <li><a href=""> ABOUT US</a></li>
+              <li><a href="/about"> ABOUT US</a></li>
               <li><a href="">SUPPORT US </a></li>
               <li><a href=""> CONTACT US </a></li>
               <li><a href=""> APPLY </a></li>
@@ -25,6 +27,7 @@
         </div>
       </header>
     {{ content | safe }}
+    </div>
     <footer>
       <div class="footer-container">
         <div class="footer-wrapper">
@@ -32,7 +35,7 @@
             <nav>
               <ul>
                 <li><a href=""> PRIZE </a></li>
-                <li><a href=""> ABOUT US</a></li>
+                <li><a href="/about"> ABOUT US</a></li>
                 <li><a href="">SUPPORT US </a></li>
                 <li><a href=""> CONTACT US </a></li>
                 <li><a href=""> APPLY </a></li>
@@ -42,5 +45,6 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/index.js"></script>
   </body>
 </html>
