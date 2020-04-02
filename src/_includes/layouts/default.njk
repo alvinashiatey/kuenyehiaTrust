@@ -7,10 +7,10 @@
     <title>{{ pageTitle or siteData.name }}</title>
   </head>
   <body>
-   <div class="wrapper">
+   
   {% include "header.njk" %}
     {{ content | safe }}
-    </div>
+   
    {% include "footer.njk" %} 
     <script src="/assets/index.js"></script>
   </body>
