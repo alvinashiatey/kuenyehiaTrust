@@ -59,6 +59,8 @@ footer {
       list-style: none;
       font-size: 0.7rem;
       margin-top: 0.5rem; }
+      footer .footer-container .footer-wrapper .map nav ul li a {
+        color: white; }
 
 .carousel-setup {
   display: flex;
