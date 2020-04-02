@@ -1,0 +1,22 @@
+{
+  "name": "kuenyehiatrust",
+  "version": "1.0.0",
+  "description": "kuenyehiatrust ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvinashiatey/kuenyehiaTrust.git"
+  },
+  "author": "Alvin Ashiatey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvinashiatey/kuenyehiaTrust/issues"
+  },
+  "homepage": "https://github.com/alvinashiatey/kuenyehiaTrust#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
