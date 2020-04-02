@@ -1,13 +1,13 @@
 ---
 layout: layouts/default.njk
-pageTitle: Eleventy on Glitch
+pageTitle: Kuenyehia Trust for Contemporary Art
 ---
 
 # My Homepage
 
 ## I am here to stay
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed blandit libero volutpat sed cras ornare. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Nec dui nunc mattis enim ut tellus elementum sagittis vitae. Id cursus metus aliquam eleifend mi in nulla posuere. Morbi quis commodo odio aenean sed adipiscing diam. In nulla posuere sollicitudin aliquam ultrices sagittis. Lacus viverra vitae congue eu consequat. Eu tincidunt tortor aliquam nulla. Ac ut consequat semper viverra nam libero justo laoreet sit. Facilisis magna etiam tempor orci eu lobortis elementum. Massa sed elementum tempus egestas sed sed risus pretium quam. Ut morbi tincidunt augue interdum velit. At quis risus sed vulputate odio.
+Alvin ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed blandit libero volutpat sed cras ornare. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Nec dui nunc mattis enim ut tellus elementum sagittis vitae. Id cursus metus aliquam eleifend mi in nulla posuere. Morbi quis commodo odio aenean sed adipiscing diam. In nulla posuere sollicitudin aliquam ultrices sagittis. Lacus viverra vitae congue eu consequat. Eu tincidunt tortor aliquam nulla. Ac ut consequat semper viverra nam libero justo laoreet sit. Facilisis magna etiam tempor orci eu lobortis elementum. Massa sed elementum tempus egestas sed sed risus pretium quam. Ut morbi tincidunt augue interdum velit. At quis risus sed vulputate odio.
 
 Enim facilisis gravida neque convallis a. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Integer quis auctor elit sed vulputate mi sit amet mauris. Lectus mauris ultrices eros in cursus. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Lorem donec massa sapien faucibus et. Libero id faucibus nisl tincidunt eget nullam non nisi. Justo laoreet sit amet cursus sit. Dolor sed viverra ipsum nunc aliquet. Fusce ut placerat orci nulla. Amet venenatis urna cursus eget nunc scelerisque viverra. Nec ultrices dui sapien eget mi proin sed libero enim. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Vitae justo eget magna fermentum iaculis. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Justo laoreet sit amet cursus sit.
 
