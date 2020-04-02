@@ -1,5 +1,41 @@
+.prizepanel {
+  color: #191919;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #f69331; }
+  .prizepanel .prizepanel__inner {
+    margin-bottom: 3.8rem; }
+    .prizepanel .prizepanel__inner .heading .panel__switch-alwayson,
+    .prizepanel .prizepanel__inner .heading .panel__switch {
+      display: flex;
+      align-items: center;
+      color: #191919; }
+      .prizepanel .prizepanel__inner .heading .panel__switch-alwayson .icon__white:hover,
+      .prizepanel .prizepanel__inner .heading .panel__switch .icon__white:hover {
+        transform: rotate(90deg);
+        transition: 400ms ease-in-out; }
+      .prizepanel .prizepanel__inner .heading .panel__switch-alwayson .icon__white img,
+      .prizepanel .prizepanel__inner .heading .panel__switch .icon__white img {
+        width: 30px; }
+      .prizepanel .prizepanel__inner .heading .panel__switch-alwayson h3,
+      .prizepanel .prizepanel__inner .heading .panel__switch h3 {
+        margin-left: 0.5rem;
+        font-size: 2rem; }
+    .prizepanel .prizepanel__inner .display__content-alwayson p,
+    .prizepanel .prizepanel__inner .display__content p {
+      margin: 0;
+      font-size: 1.3rem;
+      font-weight: lighter;
+      line-height: 1.7rem;
+      padding-left: 2.2rem; }
+
+.orange {
+  background: #f69331; }
+
+.close__panel {
+  display: none; }
+
 .nav {
-  border-bottom: 1.5px solid #992369; }
+  border-bottom: 1px solid #992369; }
 
 .inner-nav-wrap {
   margin-top: 2rem;
@@ -93,16 +129,16 @@ footer {
       color: #992369; }
 
 .aboutpanel {
-  color: white;
+  color: #fbfbf8;
   background: #992369;
-  padding: 1rem 0; }
+  padding: 1rem 3rem; }
   .aboutpanel .aboutus__inner {
     margin-bottom: 3.8rem; }
     .aboutpanel .aboutus__inner .heading .panel__switch-alwayson,
     .aboutpanel .aboutus__inner .heading .panel__switch {
       display: flex;
       align-items: center;
-      color: white; }
+      color: #fbfbf8; }
       .aboutpanel .aboutus__inner .heading .panel__switch-alwayson .icon__white:hover,
       .aboutpanel .aboutus__inner .heading .panel__switch .icon__white:hover {
         transform: rotate(90deg);
@@ -119,7 +155,8 @@ footer {
       margin: 0;
       font-size: 1.3rem;
       font-weight: lighter;
-      line-height: 1.7rem; }
+      line-height: 1.7rem;
+      padding-left: 2.2rem; }
 
 .orange {
   background: #f69331; }
@@ -130,13 +167,14 @@ footer {
 body {
   font-size: 62.5%;
   font-family: helvetic, sans-serif;
-  margin: 0; }
+  margin: 0;
+  background: #fbfbf8; }
   body a {
     text-decoration: none;
-    color: black;
+    color: #191919;
     cursor: pointer; }
   body .wrapper {
-    width: 80%;
+    max-width: 800px;
     margin: 0 auto; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

@@ -1,4 +1,5 @@
 @import "./components/variables.scss";
+@import "./components/prize.scss";
 @import "./components/header.scss";
 @import "./components/banner.scss";
 @import "./components/footer.scss";
@@ -9,15 +10,16 @@ body {
   font-size: 62.5%;
   font-family: helvetic, sans-serif;
   margin: 0;
+  background: $kw-color;
 
   a {
     text-decoration: none;
-    color: black;
+    color: $kb-color;
     cursor: pointer;
   }
 
   .wrapper {
-    width: 80%;
+    max-width: 800px;
     margin: 0 auto;
   }
 }

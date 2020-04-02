@@ -1,15 +1,15 @@
-.aboutpanel {
-  color: $kw-color;
-  background: $kr-color;
+.prizepanel {
+  color: $kb-color;
   padding: 1rem 3rem;
-  .aboutus__inner {
+  border-bottom: 1px solid $ko-color;
+  .prizepanel__inner {
     margin-bottom: 3.8rem;
     .heading {
       .panel__switch-alwayson,
       .panel__switch {
         display: flex;
         align-items: center;
-        color: $kw-color;
+        color: $kb-color;
         .icon__white {
           &:hover {
             transform: rotate(90deg);
