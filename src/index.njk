@@ -43,25 +43,17 @@ pageTitle: Kuenyehia Trust for Contemporary Art
           </div>
         </div>
 
+        
+        
         <div class="info-banner">
           <div class="banner-wrapper">
             <div class="banner-container">
 
-            {% for post in collections.posts %}
-                <div class="banner-element">
-                <div class="heading">
-                  <img src="./assets/icon.svg" alt="" />
-                  <h3>{{post.data.pageTitle}}</h3>
-                </div>
-                <p>
-                  {{post.data.description}}
-                  <br>
-                   <em>{{ shortlist.date | date: "%Y-%m-%d" }}</em>
-                   <br><span> <a href="{{ post.url }}">Read more</a> </span>
-                </p>
-              </div>
-            {% endfor %}
-         
+            {% set postslist = collections.posts | head(-3) %}
+            {% include "postList.njk" %}
+
+
+
             </div>
           </div>
         </div>

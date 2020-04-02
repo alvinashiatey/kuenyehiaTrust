@@ -1,0 +1,12 @@
+---
+layout: layouts/default.njk
+pageTitle: Blog
+---
+
+<div class ="wrapper" >
+<h1>{{ title }}</h1>
+
+{{ content | safe }}
+
+<p><a href="{{ '/' | url }}">← Home</a></p>
+</div>
