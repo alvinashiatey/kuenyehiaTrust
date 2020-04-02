@@ -46,41 +46,22 @@ pageTitle: Kuenyehia Trust for Contemporary Art
         <div class="info-banner">
           <div class="banner-wrapper">
             <div class="banner-container">
-              <div class="banner-element">
-                <div class="heading">
-                  <img src="./assets/icon.svg" alt="" />
-                  <h3>WHATS ON</h3>
-                </div>
-                <p>
-                  The Cartharsis IV exhibition is ongoing till ullamco. Laboris
-                  nisi ut aliquip ex ea commodo ….
-                  <span> <a href="">Read more</a> </span>
-                </p>
-              </div>
 
-              <div class="banner-element">
+            {% for post in collections.posts %}
+                <div class="banner-element">
                 <div class="heading">
                   <img src="./assets/icon.svg" alt="" />
-                  <h3>BLOG</h3>
+                  <h3>{{post.data.pageTitle}}</h3>
                 </div>
                 <p>
-                  The Cartharsis IV exhibition is ongoing till ullamco. Laboris
-                  nisi ut aliquip ex ea commodo ….
-                  <span> <a href="">Read more</a> </span>
+                  {{post.data.description}}
+                  <br>
+                   <em>{{ shortlist.date | date: "%Y-%m-%d" }}</em>
+                   <br><span> <a href="{{ post.url }}">Read more</a> </span>
                 </p>
               </div>
-
-              <div class="banner-element">
-                <div class="heading">
-                  <img src="./assets/icon.svg" alt="" />
-                  <h3>BLOG</h3>
-                </div>
-                <p>
-                  The Cartharsis IV exhibition is ongoing till ullamco. Laboris
-                  nisi ut aliquip ex ea commodo ….
-                  <span> <a href="">Read more</a> </span>
-                </p>
-              </div>
+            {% endfor %}
+         
             </div>
           </div>
         </div>
