@@ -52,6 +52,23 @@
 .close__panel {
   display: none; }
 
+.blog {
+  margin-top: 3rem;
+  padding: 0 2rem; }
+  .blog h1 {
+    text-transform: uppercase; }
+  .blog p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: lighter; }
+
+.blog__link {
+  margin-bottom: 2rem; }
+  .blog__link a {
+    font-size: 1.2rem; }
+    .blog__link a:hover {
+      color: #992369; }
+
 .nav {
   border-bottom: 1px solid #992369; }
 
@@ -145,6 +162,11 @@ footer {
     color: #f69331; }
     .carousel-setup button:hover {
       color: #992369; }
+    .carousel-setup button:focus {
+      outline: 0; }
+    .carousel-setup button:active {
+      outline: none;
+      border: none; }
 
 .aboutpanel {
   color: #fbfbf8;

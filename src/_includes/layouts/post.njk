@@ -5,8 +5,8 @@ pageTitle: Blog
 
 <div class ="wrapper" >
 <h1>{{ title }}</h1>
-
+<div class = "blog">
 {{ content | safe }}
-
-<p><a href="{{ '/' | url }}">← Home</a></p>
+</div>
+<p class="blog__link"><a href="{{ '/' | url }}">← Home</a></p>
 </div>

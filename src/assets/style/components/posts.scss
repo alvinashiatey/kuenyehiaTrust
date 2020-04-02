@@ -1,0 +1,22 @@
+.blog {
+  margin-top: 3rem;
+  padding: 0 2rem;
+  h1 {
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: lighter;
+  }
+}
+
+.blog__link {
+  a {
+    font-size: 1.2rem;
+    &:hover {
+      color: $kr-color;
+    }
+  }
+  margin-bottom: 2rem;
+}
