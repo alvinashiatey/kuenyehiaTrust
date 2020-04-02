@@ -6,6 +6,8 @@ const mouseHandlers = () => {
   const carouselSlides = document.querySelectorAll(".slide");
   const prevBtn = document.querySelector("#prev");
   const nextBtn = document.querySelector("#next");
+  const panels = document.querySelector(".display__content");
+  const panelSwitchs = document.querySelectorAll(".panel__switch");
 
   let counter = 0;
 
@@ -29,6 +31,18 @@ const mouseHandlers = () => {
       carousel.style.transition = "transform 0.6s ease-in-out";
       counter--;
       carousel.style.transform = `translateX(-${size * counter}px)`;
+    });
+  }
+
+  if (panels) {
+    const panelSwitchsArr = Array.from(panelSwitchs);
+
+    panelSwitchsArr.forEach(panelSwitch => {
+      panelSwitch.addEventListener("click", e => {
+        e.preventDefault();
+        const panel = panelSwitch.parentNode.parentNode.children[1];
+        panel.classList.toggle("close__panel");
+      });
     });
   }
 };

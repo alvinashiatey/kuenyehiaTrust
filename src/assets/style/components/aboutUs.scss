@@ -4,7 +4,7 @@
   padding: 1rem 0;
   .aboutus__inner {
     .heading {
-      #about-us {
+      .panel__switch {
         display: flex;
         align-items: center;
         color: white;
@@ -19,22 +19,20 @@
         }
       }
     }
-    #display__content2,
-    #display__content {
-      display: none;
+    .display__content {
       p {
         margin: 0;
         font-size: 1.3rem;
         font-weight: lighter;
       }
     }
-    #display__content2,
-    #display__content:target {
-      display: block;
-    }
   }
 }
 
 .orange {
   background: $ko-color;
+}
+
+.close__panel {
+  display: none;
 }

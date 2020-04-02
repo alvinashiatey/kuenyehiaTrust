@@ -94,29 +94,25 @@ footer {
   color: white;
   background: #992369;
   padding: 1rem 0; }
-  .aboutpanel .aboutus__inner .heading #about-us {
+  .aboutpanel .aboutus__inner .heading .panel__switch {
     display: flex;
     align-items: center;
     color: white; }
-    .aboutpanel .aboutus__inner .heading #about-us .icon__white img {
+    .aboutpanel .aboutus__inner .heading .panel__switch .icon__white img {
       width: 30px; }
-    .aboutpanel .aboutus__inner .heading #about-us h3 {
+    .aboutpanel .aboutus__inner .heading .panel__switch h3 {
       margin-left: 0.5rem;
       font-size: 2rem; }
-  .aboutpanel .aboutus__inner #display__content2,
-  .aboutpanel .aboutus__inner #display__content {
-    display: none; }
-    .aboutpanel .aboutus__inner #display__content2 p,
-    .aboutpanel .aboutus__inner #display__content p {
-      margin: 0;
-      font-size: 1.3rem;
-      font-weight: lighter; }
-  .aboutpanel .aboutus__inner #display__content2,
-  .aboutpanel .aboutus__inner #display__content:target {
-    display: block; }
+  .aboutpanel .aboutus__inner .display__content p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: lighter; }
 
 .orange {
   background: #f69331; }
+
+.close__panel {
+  display: none; }
 
 body {
   font-size: 62.5%;
