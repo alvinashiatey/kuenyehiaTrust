@@ -1,6 +1,6 @@
 ---
 layout: layouts/default.njk
-pageTitle: Eleventy on Glitch
+pageTitle: About Us
 ---
 
 # About the site

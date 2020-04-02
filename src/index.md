@@ -1,6 +1,6 @@
 ---
 layout: layouts/default.njk
-pageTitle: Kuenyehia Trust for Contemporary Art
+pageTitle: Kuenyehia Trust for Contemporary **Art**
 ---
 
 # My Homepage
