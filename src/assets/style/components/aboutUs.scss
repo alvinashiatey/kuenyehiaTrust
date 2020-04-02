@@ -4,22 +4,31 @@
   padding: 1rem 0;
   .aboutus__inner {
     .heading {
-      display: flex;
-      align-items: center;
-      .icon__white {
-        img {
-          width: 40px;
+      #about-us {
+        display: flex;
+        align-items: center;
+        color: white;
+        .icon__white {
+          img {
+            width: 30px;
+          }
+        }
+        h3 {
+          margin-left: 0.5rem;
+          font-size: 2rem;
         }
       }
-      h3 {
-        margin-left: 0.5rem;
-        font-size: 2.5rem;
+    }
+    #display__content {
+      display: none;
+      p {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: lighter;
       }
     }
-    p {
-      margin: 0;
-      font-size: 1.6rem;
-      font-weight: lighter;
+    #display__content:target {
+      display: block;
     }
   }
 }

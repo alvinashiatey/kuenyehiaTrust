@@ -124,31 +124,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var carouseSlider = function carouseSlider() {
+var mouseHandlers = function mouseHandlers() {
   var carousel = document.querySelector(".carousel");
   var carouselSlides = document.querySelectorAll(".slide");
   var prevBtn = document.querySelector("#prev");
   var nextBtn = document.querySelector("#next");
   var counter = 0;
-  var size = carouselSlides[0].clientWidth;
-  window.addEventListener("resize", function () {
+  var size;
+
+  if (carousel) {
     size = carouselSlides[0].clientWidth;
-  });
-  nextBtn.addEventListener("click", function () {
-    if (counter >= carouselSlides.length - 1) return;
-    carousel.style.transition = "transform 0.6s ease-in-out";
-    counter++;
-    carousel.style.transform = "translateX(-".concat(size * counter, "px)");
-  });
-  prevBtn.addEventListener("click", function () {
-    if (counter <= 0) return;
-    carousel.style.transition = "transform 0.6s ease-in-out";
-    counter--;
-    carousel.style.transform = "translateX(-".concat(size * counter, "px)");
-  });
+    window.addEventListener("resize", function () {
+      size = carouselSlides[0].clientWidth;
+    });
+    nextBtn.addEventListener("click", function () {
+      if (counter >= carouselSlides.length - 1) return;
+      carousel.style.transition = "transform 0.6s ease-in-out";
+      counter++;
+      carousel.style.transform = "translateX(-".concat(size * counter, "px)");
+    });
+    prevBtn.addEventListener("click", function () {
+      if (counter <= 0) return;
+      carousel.style.transition = "transform 0.6s ease-in-out";
+      counter--;
+      carousel.style.transform = "translateX(-".concat(size * counter, "px)");
+    });
+  }
 };
 
-carouseSlider();
+mouseHandlers();
 
 /***/ })
 
