@@ -10,7 +10,7 @@
         display: flex;
         align-items: center;
         color: $kb-color;
-        .icon__white {
+        .icon_wine {
           &:hover {
             transform: rotate(90deg);
             transition: 400ms ease-in-out;
@@ -27,10 +27,33 @@
     }
     .display__content-alwayson,
     .display__content {
+      .artists {
+        display: flex;
+        justify-content: space-between;
+        .artist__list {
+          ul {
+            li {
+              list-style: none;
+              font-size: 1.2rem;
+              font-weight: lighter;
+              padding-top: 0.5rem;
+              span {
+                color: $kr-color;
+              }
+            }
+          }
+        }
+        .prize-slide {
+          width: 18rem;
+          height: 25rem;
+          background: $kr-color;
+          overflow: hidden;
+        }
+      }
       p {
         margin: 0;
         font-size: 1.3rem;
-        font-weight: lighter;
+
         line-height: 1.7rem;
         padding-left: 2.2rem;
       }

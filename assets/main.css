@@ -9,22 +9,40 @@
       display: flex;
       align-items: center;
       color: #191919; }
-      .prizepanel .prizepanel__inner .heading .panel__switch-alwayson .icon__white:hover,
-      .prizepanel .prizepanel__inner .heading .panel__switch .icon__white:hover {
+      .prizepanel .prizepanel__inner .heading .panel__switch-alwayson .icon_wine:hover,
+      .prizepanel .prizepanel__inner .heading .panel__switch .icon_wine:hover {
         transform: rotate(90deg);
         transition: 400ms ease-in-out; }
-      .prizepanel .prizepanel__inner .heading .panel__switch-alwayson .icon__white img,
-      .prizepanel .prizepanel__inner .heading .panel__switch .icon__white img {
+      .prizepanel .prizepanel__inner .heading .panel__switch-alwayson .icon_wine img,
+      .prizepanel .prizepanel__inner .heading .panel__switch .icon_wine img {
         width: 30px; }
       .prizepanel .prizepanel__inner .heading .panel__switch-alwayson h3,
       .prizepanel .prizepanel__inner .heading .panel__switch h3 {
         margin-left: 0.5rem;
         font-size: 2rem; }
+    .prizepanel .prizepanel__inner .display__content-alwayson .artists,
+    .prizepanel .prizepanel__inner .display__content .artists {
+      display: flex;
+      justify-content: space-between; }
+      .prizepanel .prizepanel__inner .display__content-alwayson .artists .artist__list ul li,
+      .prizepanel .prizepanel__inner .display__content .artists .artist__list ul li {
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: lighter;
+        padding-top: 0.5rem; }
+        .prizepanel .prizepanel__inner .display__content-alwayson .artists .artist__list ul li span,
+        .prizepanel .prizepanel__inner .display__content .artists .artist__list ul li span {
+          color: #992369; }
+      .prizepanel .prizepanel__inner .display__content-alwayson .artists .prize-slide,
+      .prizepanel .prizepanel__inner .display__content .artists .prize-slide {
+        width: 18rem;
+        height: 25rem;
+        background: #992369;
+        overflow: hidden; }
     .prizepanel .prizepanel__inner .display__content-alwayson p,
     .prizepanel .prizepanel__inner .display__content p {
       margin: 0;
       font-size: 1.3rem;
-      font-weight: lighter;
       line-height: 1.7rem;
       padding-left: 2.2rem; }
 
