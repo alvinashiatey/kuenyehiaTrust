@@ -3,12 +3,18 @@
   background: $kr-color;
   padding: 1rem 0;
   .aboutus__inner {
+    margin-bottom: 3.8rem;
     .heading {
+      .panel__switch-alwayson,
       .panel__switch {
         display: flex;
         align-items: center;
         color: white;
         .icon__white {
+          &:hover {
+            transform: rotate(90deg);
+            transition: 400ms ease-in-out;
+          }
           img {
             width: 30px;
           }
@@ -19,11 +25,13 @@
         }
       }
     }
+    .display__content-alwayson,
     .display__content {
       p {
         margin: 0;
         font-size: 1.3rem;
         font-weight: lighter;
+        line-height: 1.7rem;
       }
     }
   }

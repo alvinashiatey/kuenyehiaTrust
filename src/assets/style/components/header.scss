@@ -1,7 +1,9 @@
+.nav {
+  border-bottom: 1.5px solid $kr-color;
+}
 .inner-nav-wrap {
   margin-top: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1.5px solid $kr-color;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,7 +1,9 @@
+.nav {
+  border-bottom: 1.5px solid #992369; }
+
 .inner-nav-wrap {
   margin-top: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1.5px solid #992369;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -94,19 +96,30 @@ footer {
   color: white;
   background: #992369;
   padding: 1rem 0; }
-  .aboutpanel .aboutus__inner .heading .panel__switch {
-    display: flex;
-    align-items: center;
-    color: white; }
-    .aboutpanel .aboutus__inner .heading .panel__switch .icon__white img {
-      width: 30px; }
-    .aboutpanel .aboutus__inner .heading .panel__switch h3 {
-      margin-left: 0.5rem;
-      font-size: 2rem; }
-  .aboutpanel .aboutus__inner .display__content p {
-    margin: 0;
-    font-size: 1.3rem;
-    font-weight: lighter; }
+  .aboutpanel .aboutus__inner {
+    margin-bottom: 3.8rem; }
+    .aboutpanel .aboutus__inner .heading .panel__switch-alwayson,
+    .aboutpanel .aboutus__inner .heading .panel__switch {
+      display: flex;
+      align-items: center;
+      color: white; }
+      .aboutpanel .aboutus__inner .heading .panel__switch-alwayson .icon__white:hover,
+      .aboutpanel .aboutus__inner .heading .panel__switch .icon__white:hover {
+        transform: rotate(90deg);
+        transition: 400ms ease-in-out; }
+      .aboutpanel .aboutus__inner .heading .panel__switch-alwayson .icon__white img,
+      .aboutpanel .aboutus__inner .heading .panel__switch .icon__white img {
+        width: 30px; }
+      .aboutpanel .aboutus__inner .heading .panel__switch-alwayson h3,
+      .aboutpanel .aboutus__inner .heading .panel__switch h3 {
+        margin-left: 0.5rem;
+        font-size: 2rem; }
+    .aboutpanel .aboutus__inner .display__content-alwayson p,
+    .aboutpanel .aboutus__inner .display__content p {
+      margin: 0;
+      font-size: 1.3rem;
+      font-weight: lighter;
+      line-height: 1.7rem; }
 
 .orange {
   background: #f69331; }
