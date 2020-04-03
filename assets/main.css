@@ -170,14 +170,17 @@ footer {
           display: inline-block;
           width: 100%;
           height: 100%;
-          background: #f69331; }
+          background: #f69331;
+          opacity: 70%; }
         .carousel-setup .carousel-container .carousel .slide .slide__img img {
           mix-blend-mode: multiply;
           width: 65vw; }
       .carousel-setup .carousel-container .carousel .slide .description {
         font-weight: lighter;
+        line-height: 0.85rem;
         font-size: 0.7rem;
-        padding: 0 1rem; }
+        padding: 0 1rem;
+        color: #7f7f7f; }
   .carousel-setup button {
     border: none;
     padding: 0.5rem;

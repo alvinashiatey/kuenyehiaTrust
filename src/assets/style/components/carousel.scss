@@ -20,6 +20,7 @@
             width: 100%;
             height: 100%;
             background: $ko-color;
+            opacity: 70%;
           }
           img {
             mix-blend-mode: multiply;
@@ -28,8 +29,10 @@
         }
         .description {
           font-weight: lighter;
+          line-height: 0.85rem;
           font-size: 0.7rem;
           padding: 0 1rem;
+          color: lighten($color: $kb-color, $amount: 40);
         }
       }
     }
