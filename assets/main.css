@@ -230,10 +230,13 @@ footer {
       .aboutpanel .aboutus__inner .display__content-alwayson .advisory-board ul li,
       .aboutpanel .aboutus__inner .display__content .advisory-board ul li {
         list-style: none; }
-        .aboutpanel .aboutus__inner .display__content-alwayson .advisory-board ul li p span,
-        .aboutpanel .aboutus__inner .display__content .advisory-board ul li p span {
-          font-size: 1.1rem;
-          color: #333333; }
+        .aboutpanel .aboutus__inner .display__content-alwayson .advisory-board ul li p,
+        .aboutpanel .aboutus__inner .display__content .advisory-board ul li p {
+          padding-top: 0.5rem; }
+          .aboutpanel .aboutus__inner .display__content-alwayson .advisory-board ul li p span,
+          .aboutpanel .aboutus__inner .display__content .advisory-board ul li p span {
+            font-size: 1.1rem;
+            color: #333333; }
     .aboutpanel .aboutus__inner .display__content-alwayson p,
     .aboutpanel .aboutus__inner .display__content p {
       margin: 0;
@@ -287,6 +290,13 @@ body {
   body .wrapper {
     max-width: 800px;
     margin: 0 auto; }
+  body canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -100; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

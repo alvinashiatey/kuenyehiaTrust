@@ -1,5 +1,6 @@
 import "./assets/style/main.scss";
 import gsap from "gsap";
+import * as p5 from "p5";
 import "/Users/alvinkwabena/Documents/GitHub/kprize/node_modules/normalize.css/normalize.css";
 
 const mouseHandlers = () => {
@@ -60,3 +61,24 @@ const animation = () => {
 };
 
 animation();
+
+let s = sk => {
+  sk.setup = () => {
+    sk.createCanvas(window.innerWidth, window.innerHeight);
+  };
+
+  let xoff = 0.0;
+
+  sk.draw = () => {
+    sk.background("rgba(255,255,255, 0.25)");
+    sk.ellipse(sk.mouseX, sk.mouseY, 20);
+    var cr = sk.map(400, sk.mouseY, sk.mouseX, 0, 35);
+    xoff = xoff + 0.01;
+    let n = xoff * sk.mouseX;
+    sk.noStroke();
+    sk.fill(153, cr, n);
+    // 153, 35, 105
+  };
+};
+
+const P5 = new p5(s);

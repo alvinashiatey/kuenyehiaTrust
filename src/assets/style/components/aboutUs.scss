@@ -35,6 +35,7 @@
           li {
             list-style: none;
             p {
+              padding-top: 0.5rem;
               span {
                 font-size: 1.1rem;
                 color: lighten($color: $kb-color, $amount: 10);

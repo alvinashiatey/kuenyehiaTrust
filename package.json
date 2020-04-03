@@ -26,7 +26,8 @@
     "@11ty/eleventy": "^0.10.0",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "gsap": "^3.2.6"
+    "gsap": "^3.2.6",
+    "p5": "^1.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
