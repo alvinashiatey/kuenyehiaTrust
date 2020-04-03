@@ -20,6 +20,9 @@
     p {
       font-size: 1rem;
       font-weight: lighter;
+      &::selection {
+        background: $ko-color;
+      }
       a {
         color: $kr-color;
         display: inline-block;

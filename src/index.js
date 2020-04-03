@@ -71,13 +71,13 @@ let s = sk => {
   let xoff = 0.0;
 
   sk.draw = () => {
-    sk.background("rgba(255,255,255, 0.25)");
+    sk.background("rgba(251,251,248, 0.15)");
     sk.ellipse(sk.mouseX, sk.mouseY, 20);
     var cr = sk.map(window.innerWidth, sk.mouseY, sk.mouseX, 0, 35);
     xoff = xoff + 0.01;
     let n = xoff * sk.mouseX;
     sk.noStroke();
-    sk.fill(153, cr, n);
+    sk.fill(153, cr, 102 + n);
     // 153, 35, 105
   };
 };
