@@ -20,14 +20,17 @@
         margin-left: 0.8rem;
         font-size: 0.8rem;
         list-style: none;
+
         &:last-child {
           margin-right: 0.5rem;
         }
         a {
+          display: inline-block;
           &:hover {
             color: $ko-color;
             font-weight: 700;
-            transition: all 300ms ease-in-out;
+            transform: rotate(5deg);
+            transition: all 600ms ease-in-out;
           }
         }
       }

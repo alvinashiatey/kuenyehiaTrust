@@ -1,4 +1,5 @@
 import "./assets/style/main.scss";
+import gsap from "gsap";
 import "/Users/alvinkwabena/Documents/GitHub/kprize/node_modules/normalize.css/normalize.css";
 
 const mouseHandlers = () => {
@@ -46,5 +47,16 @@ const mouseHandlers = () => {
     });
   }
 };
-
 mouseHandlers();
+
+const animation = () => {
+  const carousel = document.querySelector(".carousel");
+
+  gsap.from(carousel, 0.9, {
+    y: 100,
+    opacity: 0,
+    ease: "power.inOut"
+  });
+};
+
+animation();
