@@ -52,12 +52,13 @@ mouseHandlers();
 
 const animation = () => {
   const carousel = document.querySelector(".carousel");
-
-  gsap.from(carousel, 0.9, {
-    y: 100,
-    opacity: 0,
-    ease: "power.inOut"
-  });
+  if (carousel) {
+    gsap.from(carousel, 0.9, {
+      y: 100,
+      opacity: 0,
+      ease: "power.inOut"
+    });
+  }
 };
 
 animation();
@@ -72,7 +73,7 @@ let s = sk => {
   sk.draw = () => {
     sk.background("rgba(255,255,255, 0.25)");
     sk.ellipse(sk.mouseX, sk.mouseY, 20);
-    var cr = sk.map(400, sk.mouseY, sk.mouseX, 0, 35);
+    var cr = sk.map(window.innerWidth, sk.mouseY, sk.mouseX, 0, 35);
     xoff = xoff + 0.01;
     let n = xoff * sk.mouseX;
     sk.noStroke();
