@@ -16,17 +16,26 @@ pageTitle: Kuenyehia Prize
       </div>
       <div class="display__content-alwayson">
         <p>
-          A prize to find, reward and support the most outstanding Ghanaian
-          artists between 25 and 40
+          The Kuenyehia Prize, the flagship of the Trust identifies, rewards and
+          helps develop Ghana’s most outstanding artists between the ages of 25
+          and 40. Winners and runners-up benefit from prize money and materials
+          totalling thirty-five thousand cedis (GHS 35,000) each season.
         </p>
         <br />
         <p>
-          The objective of the Kuenyehia Prize for Contemporary Ghanaian art is
-          to make a modest contribution to the Ghanaian art ecosystem by
-          inspiring the next generation of Ghanaian artists to produce work that
-          will attract both local and international audiences. It will also draw
-          attention to Ghanaian art and encourage increased patronage by the
-          middle class and corporate Ghana.
+          Judges over the past four seasons include: Professor El Anatsui, the
+          first African to be awarded the Golden Lion for lifetime achievement –
+          the highest honour bestowed on an artist – at the 2015 Venice
+          Biennale; Richard Scott, a South African artist of global
+          repute; Gbenga Oyebode MFR, one of Nigeria’s most influential art
+          collectors; and Professor Ablade Glover, one of the most prolific and
+          collected Ghanaian artist.
+        </p>
+        <br />
+        <p>
+          The prominence that the Prize gives to its artists provides them with
+          an accelerated boost in their careers, direct financial gain and
+          immense opportunity both locally and internationally.
         </p>
       </div>
     </div>
@@ -42,17 +51,17 @@ pageTitle: Kuenyehia Prize
           <div class="icon_wine">
             <img src="/assets/icon_wine.svg" alt="" />
           </div>
-          <h3>{{lists.Year}}</h3>
+          <h3>{{ lists.Year }}</h3>
         </a>
       </div>
       <div class="display__content close__panel">
         <div class="artists">
           <div class="artist__list">
             <ul>
-            {% for artist in lists.artists.list%}
+              {% for artist in lists.artists.list%}
               <li>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <span> {{artist}}</span>
+                  <span> {{ artist }}</span>
                 </a>
               </li>
               {%endfor%}

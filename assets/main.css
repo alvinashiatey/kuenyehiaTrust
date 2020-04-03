@@ -137,7 +137,8 @@
       .info-banner .banner-wrapper .banner-container .banner-element p {
         font-weight: lighter;
         line-height: 1rem;
-        font-size: 0.8rem; }
+        font-size: 0.8rem;
+        letter-spacing: 0.045rem; }
         .info-banner .banner-wrapper .banner-container .banner-element p span a {
           color: #992369;
           display: inline-block; }
@@ -262,6 +263,13 @@ footer {
       .aboutpanel .aboutus__inner .heading .panel__switch h3 {
         margin-left: 0.5rem;
         font-size: 2rem; }
+    .aboutpanel .aboutus__inner .display__content-alwayson .list__panel li,
+    .aboutpanel .aboutus__inner .display__content .list__panel li {
+      list-style: none;
+      font-weight: lighter;
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+      padding-left: 4rem; }
     .aboutpanel .aboutus__inner .display__content-alwayson .advisory-board ul,
     .aboutpanel .aboutus__inner .display__content .advisory-board ul {
       margin: 0;
@@ -343,6 +351,9 @@ footer {
       .contact-us__wrapper .contact-us__panel .content p {
         font-size: 1rem;
         line-height: 1.5rem; }
+
+.find__us #map {
+  height: 25rem; }
 
 body {
   font-size: 62.5%;

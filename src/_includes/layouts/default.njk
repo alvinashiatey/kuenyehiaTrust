@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="{{ '/assets/main.css' | url }}">
     <title>{{ pageTitle or siteData.name }}</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKdwsFsIw1STe6Xf2zUFH0Sk8n6YQza40&callback=initMap"
+    async defer></script>
   </head>
   <body>
   {% include "header.njk" %}
