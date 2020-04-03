@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "Year": "2018",
+    "artists": {
+      "list": [
+        "Yaw Owusu [winner]",
+        "Damalie Esinam Rosemary [2nd runner-up]",
+        "Comfort Arthur [1st runner-up]",
+        "Emmanuel Obuobi Bekoe",
+        "Frederick Botchway",
+        "Josephine Ngminvielu Kuuire",
+        "Daniel Cole Ofoe Amegavie",
+        "Caleb Aryee",
+        "Simon Bowman Junior",
+        "Sedinam Awo Tsegah",
+        "Lesley Kafui Semackor",
+        "John Edem Tamakloe"
+      ]
+    },
+    "created_at": "2020-04-02T21:12:27.234Z",
+    "updated_at": "2020-04-02T21:21:53.983Z"
+  },
+  {
+    "id": 2,
+    "Year": "2017",
+    "artists": {
+      "list": [
+        " Yaw Owusu [winner]",
+        "Damalie Esinam Rosemary [2nd runner-up]",
+        "Comfort Arthur [1st runner-up]",
+        "Emmanuel Obuobi Bekoe",
+        "Frederick Botchway",
+        "Josephine Ngminvielu Kuuire",
+        "Daniel Cole Ofoe Amegavie",
+        "Caleb Aryee",
+        "Simon Bowman Junior",
+        "Sedinam Awo Tsegah",
+        "Lesley Kafui Semackor",
+        "John Edem Tamakloe"
+      ]
+    }
+  }
+]

@@ -33,6 +33,7 @@ pageTitle: Kuenyehia Prize
   </div>
 </div>
 
+{% for lists in data %}
 <div class="prizepanel">
   <div class="wrapper">
     <div class="prizepanel__inner">
@@ -41,160 +42,20 @@ pageTitle: Kuenyehia Prize
           <div class="icon_wine">
             <img src="/assets/icon_wine.svg" alt="" />
           </div>
-          <h3>{{shortlist.year}}</h3>
-        </a>
-      </div>
-      <div class="display__content">
-        <div class="artists">
-          <div class="artist__list">
-            <ul>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <span> {{shortlist.artists[0]}} </span>
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <span> Damalie Esinam Rosemary [2nd runner-up] </span>
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <span> Comfort Arthur [1st runner-up] </span>
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Emmanuel Obuobi Bekoe
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Frederick Botchway
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Josephine Ngminvielu Kuuire
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Daniel Cole Ofoe Amegavie
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Caleb Aryee
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Simon Bowman Junior
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Sedinam Awo Tsegah
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Lesley Kafui Semackor
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  John Edem Tamakloe
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="prize-slide">
-            <div class="slide"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="prizepanel">
-  <div class="wrapper">
-    <div class="prizepanel__inner">
-      <div class="heading">
-        <a href="" class="panel__switch">
-          <div class="icon_wine">
-            <img src="/assets/icon_wine.svg" alt="" />
-          </div>
-          <h3>2017</h3>
+          <h3>{{lists.Year}}</h3>
         </a>
       </div>
       <div class="display__content close__panel">
         <div class="artists">
           <div class="artist__list">
             <ul>
+            {% for artist in lists.artists.list%}
               <li>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <span> Yaw Owusu [winner] </span>
+                  <span> {{artist}}</span>
                 </a>
               </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <span> Damalie Esinam Rosemary [2nd runner-up] </span>
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <span> Comfort Arthur [1st runner-up] </span>
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Emmanuel Obuobi Bekoe
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Frederick Botchway
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Josephine Ngminvielu Kuuire
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Daniel Cole Ofoe Amegavie
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Caleb Aryee
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Simon Bowman Junior
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Sedinam Awo Tsegah
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  Lesley Kafui Semackor
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  John Edem Tamakloe
-                </a>
-              </li>
+              {%endfor%}
             </ul>
           </div>
 
@@ -206,3 +67,4 @@ pageTitle: Kuenyehia Prize
     </div>
   </div>
 </div>
+{%endfor%}

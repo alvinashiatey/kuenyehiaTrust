@@ -6,8 +6,15 @@
     width: 600px;
     border-bottom: 1px solid $ko-color;
     .heading {
+      display: flex;
+      margin: 0;
       h3 {
         font-size: 1.2rem;
+        margin-left: 0.8rem;
+      }
+      img {
+        margin: 0;
+        width: 1.2rem;
       }
     }
     p {
