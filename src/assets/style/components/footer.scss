@@ -18,6 +18,16 @@ footer {
           justify-content: space-evenly;
           li {
             list-style: none;
+            a {
+              color: $kw-color;
+              display: inline-block;
+              &:hover {
+                color: $kr-color;
+                font-weight: 700;
+                transform: rotate(5deg);
+                transition: all 300ms $kease;
+              }
+            }
             &::before {
               content: "|";
               margin-right: 1.5rem;

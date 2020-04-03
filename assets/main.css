@@ -164,6 +164,14 @@ footer {
         justify-content: space-evenly; }
         footer .footer-container .footer-section-one .social__links ul li {
           list-style: none; }
+          footer .footer-container .footer-section-one .social__links ul li a {
+            color: #fbfbf8;
+            display: inline-block; }
+            footer .footer-container .footer-section-one .social__links ul li a:hover {
+              color: #992369;
+              font-weight: 700;
+              transform: rotate(5deg);
+              transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
           footer .footer-container .footer-section-one .social__links ul li::before {
             content: "|";
             margin-right: 1.5rem; }
