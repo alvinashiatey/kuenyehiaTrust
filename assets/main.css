@@ -222,6 +222,18 @@ footer {
       .aboutpanel .aboutus__inner .heading .panel__switch h3 {
         margin-left: 0.5rem;
         font-size: 2rem; }
+    .aboutpanel .aboutus__inner .display__content-alwayson .advisory-board ul,
+    .aboutpanel .aboutus__inner .display__content .advisory-board ul {
+      margin: 0;
+      padding: 0;
+      position: relative; }
+      .aboutpanel .aboutus__inner .display__content-alwayson .advisory-board ul li,
+      .aboutpanel .aboutus__inner .display__content .advisory-board ul li {
+        list-style: none; }
+        .aboutpanel .aboutus__inner .display__content-alwayson .advisory-board ul li p span,
+        .aboutpanel .aboutus__inner .display__content .advisory-board ul li p span {
+          font-size: 1.1rem;
+          color: #333333; }
     .aboutpanel .aboutus__inner .display__content-alwayson p,
     .aboutpanel .aboutus__inner .display__content p {
       margin: 0;

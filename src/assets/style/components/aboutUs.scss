@@ -27,6 +27,22 @@
     }
     .display__content-alwayson,
     .display__content {
+      .advisory-board {
+        ul {
+          margin: 0;
+          padding: 0;
+          position: relative;
+          li {
+            list-style: none;
+            p {
+              span {
+                font-size: 1.1rem;
+                color: lighten($color: $kb-color, $amount: 10);
+              }
+            }
+          }
+        }
+      }
       p {
         margin: 0;
         font-size: 1.3rem;
