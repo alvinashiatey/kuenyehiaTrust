@@ -25,10 +25,17 @@
         }
         p {
           font-weight: lighter;
-          font-size: 0.7rem;
+          line-height: 1rem;
+          font-size: 0.8rem;
           span {
             a {
               color: $kr-color;
+              display: inline-block;
+              &:hover {
+                font-weight: bold;
+                transform: rotate(-5deg);
+                transition: all 300ms $kease;
+              }
             }
           }
         }

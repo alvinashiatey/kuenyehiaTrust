@@ -71,7 +71,7 @@ let s = sk => {
   let xoff = 0.0;
 
   sk.draw = () => {
-    sk.background("rgba(251,251,248, 0.15)");
+    sk.background("rgba(251,251,248, 0.17)");
     sk.ellipse(sk.mouseX, sk.mouseY, 20);
     var cr = sk.map(window.innerWidth, sk.mouseY, sk.mouseX, 0, 35);
     xoff = xoff + 0.01;

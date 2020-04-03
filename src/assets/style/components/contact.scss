@@ -1,0 +1,32 @@
+.contact-us__wrapper {
+  width: 40rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+
+  .img__container {
+    width: 33rem;
+    height: 20rem;
+    background: $ko-color;
+    margin: 0 auto;
+  }
+  .contact-us__panel {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid $kr-color;
+    padding: 1.5rem 0;
+    .heading {
+      h1 {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+      }
+    }
+    .content {
+      width: 20rem;
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

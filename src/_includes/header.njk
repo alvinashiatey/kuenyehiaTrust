@@ -2,17 +2,17 @@
   <div class="wrapper">
         <div class="inner-nav-wrap">
           <div class="logo">
-            <a href="/">
+            <a href="{{ '/' | url }}">
               <img src="{{ '/assets/logo.png' | url }}" alt="" />
             </a>
           </div>
           <nav>
             <ul class="links">
-              <li><a href="/prize"> PRIZE </a></li>
-              <li><a href="/about"> ABOUT US</a></li>
-              <li><a href="">SUPPORT US </a></li>
-              <li><a href="/contact"> CONTACT US </a></li>
-              <li><a href=""> APPLY </a></li>
+              <li><a href="/prize" {% if page.url == '/prize/'%} class="active__link"{% endif %}> PRIZE </a></li>
+              <li><a href="/about" {% if page.url == '/about/'%} class="active__link"{% endif %}> ABOUT US</a></li>
+              <li><a href="" {% if page.url == '/support/'%} class="active__link"{% endif %}>SUPPORT US </a></li>
+              <li><a href="/contact" {% if page.url == '/contact/'%} class="active__link"{% endif %}> CONTACT US </a></li>
+              <li><a href="" {% if page.url == '/apply/'%} class="active__link"{% endif %} > APPLY </a></li>
             </ul>
           </nav>
         </div>

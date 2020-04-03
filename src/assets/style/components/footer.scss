@@ -1,15 +1,15 @@
 footer {
   color: $kw-color;
   width: 100%;
-  height: 10rem;
   background: $ko-color;
-  padding-bottom: 3rem;
-  font-size: 0.7rem;
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
   letter-spacing: $kernS;
   .footer-container {
     width: 80%;
     margin: 0 auto;
     padding-top: 1.5rem;
+
     .footer-section-one {
       border-bottom: 1px solid $kw-color;
       .social__links {
@@ -27,18 +27,31 @@ footer {
       }
     }
     .footer-wrapper {
+      display: flex;
+      justify-content: space-between;
       .map {
         nav {
           ul {
             li {
               a {
                 color: $kw-color;
+                display: inline-block;
+                &:hover {
+                  color: $kr-color;
+                  font-weight: 700;
+                  transform: rotate(-5deg);
+                  transition: all 300ms $kease;
+                }
               }
               list-style: none;
               margin-top: 0.5rem;
             }
           }
         }
+      }
+      .location__info {
+        width: 15rem;
+        line-height: 0.9rem;
       }
     }
   }

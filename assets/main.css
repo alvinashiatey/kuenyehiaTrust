@@ -56,10 +56,25 @@
   margin-top: 3rem;
   padding: 0 2rem; }
   .blog h1 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    color: #333333;
+    position: relative; }
+    .blog h1::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      margin-top: 1.6rem;
+      left: 0;
+      width: 50%;
+      height: 0.18rem;
+      background: #f69331;
+      z-index: -2; }
   .blog p {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
     font-weight: lighter; }
 
 .blog__link {
@@ -95,8 +110,8 @@
         .inner-nav-wrap nav ul li a:hover {
           color: #f69331;
           font-weight: 700;
-          transform: rotate(5deg);
-          transition: all 600ms 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+          transform: rotate(-5deg);
+          transition: all 600ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
 
 .info-banner {
   margin: 7rem 0 3rem 0;
@@ -121,17 +136,22 @@
           width: 1.2rem; }
       .info-banner .banner-wrapper .banner-container .banner-element p {
         font-weight: lighter;
-        font-size: 0.7rem; }
+        line-height: 1rem;
+        font-size: 0.8rem; }
         .info-banner .banner-wrapper .banner-container .banner-element p span a {
-          color: #992369; }
+          color: #992369;
+          display: inline-block; }
+          .info-banner .banner-wrapper .banner-container .banner-element p span a:hover {
+            font-weight: bold;
+            transform: rotate(-5deg);
+            transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
 
 footer {
   color: #fbfbf8;
   width: 100%;
-  height: 10rem;
   background: #f69331;
-  padding-bottom: 3rem;
-  font-size: 0.7rem;
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 0.09rem; }
   footer .footer-container {
     width: 80%;
@@ -147,11 +167,23 @@ footer {
           footer .footer-container .footer-section-one .social__links ul li::before {
             content: "|";
             margin-right: 1.5rem; }
-    footer .footer-container .footer-wrapper .map nav ul li {
-      list-style: none;
-      margin-top: 0.5rem; }
-      footer .footer-container .footer-wrapper .map nav ul li a {
-        color: #fbfbf8; }
+    footer .footer-container .footer-wrapper {
+      display: flex;
+      justify-content: space-between; }
+      footer .footer-container .footer-wrapper .map nav ul li {
+        list-style: none;
+        margin-top: 0.5rem; }
+        footer .footer-container .footer-wrapper .map nav ul li a {
+          color: #fbfbf8;
+          display: inline-block; }
+          footer .footer-container .footer-wrapper .map nav ul li a:hover {
+            color: #992369;
+            font-weight: 700;
+            transform: rotate(-5deg);
+            transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+      footer .footer-container .footer-wrapper .location__info {
+        width: 15rem;
+        line-height: 0.9rem; }
 
 .carousel-setup {
   display: flex;
@@ -280,6 +312,30 @@ footer {
           transform: rotate(-5deg);
           transition: 300ms ease-in; }
 
+.contact-us__wrapper {
+  width: 40rem;
+  margin: 0 auto;
+  padding-top: 2rem; }
+  .contact-us__wrapper .img__container {
+    width: 33rem;
+    height: 20rem;
+    background: #f69331;
+    margin: 0 auto; }
+  .contact-us__wrapper .contact-us__panel {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #992369;
+    padding: 1.5rem 0; }
+    .contact-us__wrapper .contact-us__panel .heading h1 {
+      text-transform: uppercase;
+      font-size: 1.8rem; }
+    .contact-us__wrapper .contact-us__panel .content {
+      width: 20rem; }
+      .contact-us__wrapper .contact-us__panel .content p {
+        font-size: 1rem;
+        line-height: 1.5rem; }
+
 body {
   font-size: 62.5%;
   font-family: helvetic, sans-serif;
@@ -298,6 +354,10 @@ body {
     margin: 0;
     padding: 0;
     z-index: -100; }
+  body .active__link {
+    color: #f69331;
+    font-weight: 700;
+    transform: rotate(-5deg); }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
