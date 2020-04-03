@@ -219,6 +219,26 @@ footer {
 .close__panel {
   display: none; }
 
+.blog__wrapper {
+  color: #191919;
+  padding-bottom: 2rem; }
+  .blog__wrapper .blog-element {
+    margin: 0 auto;
+    width: 600px;
+    border-bottom: 1px solid #f69331; }
+    .blog__wrapper .blog-element .heading h3 {
+      font-size: 1.2rem; }
+    .blog__wrapper .blog-element p {
+      font-size: 1rem;
+      font-weight: lighter; }
+      .blog__wrapper .blog-element p a {
+        color: #992369;
+        display: inline-block; }
+        .blog__wrapper .blog-element p a:hover {
+          font-weight: bold;
+          transform: rotate(-5deg);
+          transition: 300ms ease-in; }
+
 body {
   font-size: 62.5%;
   font-family: helvetic, sans-serif;

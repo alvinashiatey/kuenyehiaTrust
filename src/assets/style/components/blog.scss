@@ -1,0 +1,27 @@
+.blog__wrapper {
+  color: $kb-color;
+  padding-bottom: 2rem;
+  .blog-element {
+    margin: 0 auto;
+    width: 600px;
+    border-bottom: 1px solid $ko-color;
+    .heading {
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+    p {
+      font-size: 1rem;
+      font-weight: lighter;
+      a {
+        color: $kr-color;
+        display: inline-block;
+        &:hover {
+          font-weight: bold;
+          transform: rotate(-5deg);
+          transition: 300ms ease-in;
+        }
+      }
+    }
+  }
+}
