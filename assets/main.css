@@ -90,12 +90,13 @@
       .inner-nav-wrap nav ul li:last-child {
         margin-right: 0.5rem; }
       .inner-nav-wrap nav ul li a {
-        display: inline-block; }
+        display: inline-block;
+        letter-spacing: 0.09rem; }
         .inner-nav-wrap nav ul li a:hover {
           color: #f69331;
           font-weight: 700;
           transform: rotate(5deg);
-          transition: all 600ms ease-in-out; }
+          transition: all 600ms 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
 
 .info-banner {
   margin: 7rem 0 3rem 0;
@@ -113,6 +114,7 @@
         margin: 0; }
         .info-banner .banner-wrapper .banner-container .banner-element .heading h3 {
           font-size: 1.3rem;
+          letter-spacing: 0.13rem;
           margin: 0 0 0 0.8rem; }
         .info-banner .banner-wrapper .banner-container .banner-element .heading img {
           margin: 0;
@@ -129,7 +131,8 @@ footer {
   height: 10rem;
   background: #f69331;
   padding-bottom: 3rem;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  letter-spacing: 0.09rem; }
   footer .footer-container {
     width: 80%;
     margin: 0 auto;
@@ -169,7 +172,7 @@ footer {
           position: absolute;
           display: inline-block;
           width: 100%;
-          height: 100%;
+          height: 99.6%;
           background: #f69331;
           opacity: 70%; }
         .carousel-setup .carousel-container .carousel .slide .slide__img img {
