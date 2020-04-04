@@ -118,6 +118,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 620px) {
+    .inner-nav-wrap {
+      justify-content: space-evenly; } }
   .inner-nav-wrap .logo img {
     width: 150px; }
   .inner-nav-wrap nav ul {
