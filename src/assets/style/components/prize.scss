@@ -4,6 +4,9 @@
   border-bottom: 1px solid $ko-color;
   .prizepanel__inner {
     margin-bottom: 3.8rem;
+    @media screen and (min-width: $break-small) {
+      margin-bottom: 1.5rem;
+    }
     .heading {
       .panel__switch-alwayson,
       .panel__switch {
@@ -22,6 +25,11 @@
         h3 {
           margin-left: 0.5rem;
           font-size: 2rem;
+          @media screen and (min-width: $break-small) {
+            font-size: 1.2rem;
+            padding-left: 0rem;
+            line-height: 1.3rem;
+          }
         }
       }
     }
@@ -30,8 +38,16 @@
       .artists {
         display: flex;
         justify-content: space-between;
+        @media screen and (min-width: $break-small) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         .artist__list {
           ul {
+            @media screen and (min-width: $break-small) {
+              padding: 0 2rem 2rem 0;
+            }
             li {
               list-style: none;
               font-size: 1.2rem;
@@ -56,6 +72,11 @@
 
         line-height: 1.7rem;
         padding-left: 2.2rem;
+        @media screen and (min-width: $break-small) {
+          font-size: 1rem;
+          padding-left: 0rem;
+          line-height: 1.3rem;
+        }
       }
     }
   }

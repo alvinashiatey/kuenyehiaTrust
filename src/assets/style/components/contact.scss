@@ -2,12 +2,17 @@
   width: 40rem;
   margin: 0 auto;
   padding-top: 2rem;
-
+  @media screen and (min-width: $break-small) {
+    width: 100%;
+  }
   .img__container {
     width: 33rem;
     height: 20rem;
     background: $ko-color;
     margin: 0 auto;
+    @media screen and (min-width: $break-small) {
+      width: 100%;
+    }
   }
   .contact-us__panel {
     margin-top: 2.5rem;
@@ -15,6 +20,9 @@
     justify-content: space-evenly;
     border-top: 1px solid $kr-color;
     padding: 1.5rem 0;
+    @media screen and (min-width: $break-small) {
+      flex-direction: column;
+    }
     .heading {
       h1 {
         text-transform: uppercase;

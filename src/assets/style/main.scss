@@ -35,6 +35,9 @@ body {
     margin: 0;
     padding: 0;
     z-index: -100;
+    @media screen and (min-width: $break-small) {
+      display: none;
+    }
   }
 
   .active__link {
