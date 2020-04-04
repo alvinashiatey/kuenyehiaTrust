@@ -1,6 +1,5 @@
 import "./assets/style/main.scss";
-import axios from "axios";
-import gsap from "gsap";
+import { gsap } from "gsap/all";
 import * as p5 from "p5";
 import "/Users/alvinkwabena/Documents/GitHub/kprize/node_modules/normalize.css/normalize.css";
 
@@ -17,23 +16,29 @@ const mouseHandlers = () => {
   let size;
 
   if (carousel) {
-    size = carouselSlides[0].clientWidth;
+    size = carousel.clientWidth;
     window.addEventListener("resize", () => {
-      size = carouselSlides[0].clientWidth;
+      size = carousel.clientWidth;
     });
 
     nextBtn.addEventListener("click", () => {
       if (counter >= carouselSlides.length - 1) return;
-      carousel.style.transition = "transform 0.6s ease-in-out";
+      gsap.to(carousel, 2, {
+        x: `-=${size}`,
+        ease: "power3.inOut",
+      });
       counter++;
-      carousel.style.transform = `translateX(-${size * counter}px)`;
+      console.log("next", counter, carouselSlides.length);
     });
 
     prevBtn.addEventListener("click", () => {
       if (counter <= 0) return;
-      carousel.style.transition = "transform 0.6s ease-in-out";
+      gsap.to(carousel, 2, {
+        x: `+=${size}`,
+        ease: "power3.inOut",
+      });
       counter--;
-      carousel.style.transform = `translateX(-${size * counter}px)`;
+      console.log("prev", counter, carouselSlides.length);
     });
   }
 
