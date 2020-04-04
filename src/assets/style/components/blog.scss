@@ -1,10 +1,16 @@
 .blog__wrapper {
   color: $kb-color;
   padding-bottom: 2rem;
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  }
   .blog-element {
     margin: 0 auto;
     width: 600px;
     border-bottom: 1px solid $ko-color;
+    @media screen and (max-width: $break-small) {
+      width: 22rem;
+    }
     .heading {
       display: flex;
       margin: 0;

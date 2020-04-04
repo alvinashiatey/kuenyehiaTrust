@@ -37,24 +37,19 @@
       }
     }
   }
-  button {
-    border: none;
-    padding: 0.5rem;
-    text-decoration: none;
-    background: none;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    color: $ko-color;
+  .navi {
+    .button {
+      width: 2rem;
 
-    &:hover {
-      color: $kr-color;
-    }
-    &:focus {
-      outline: 0;
-    }
-    &:active {
-      outline: none;
-      border: none;
+      path {
+        fill: none;
+        stroke-width: 1.5px;
+        stroke: $kr-color;
+
+        &:hover {
+          stroke: $ko-color;
+        }
+      }
     }
   }
 }

@@ -101,11 +101,18 @@
     font-size: 1.1rem;
     line-height: 1.7rem;
     font-weight: lighter; }
+    @media screen and (max-width: 620px) {
+      .blog p {
+        font-size: 1rem;
+        line-height: 1.3rem; } }
 
 .blog__link {
   margin-bottom: 2rem; }
   .blog__link a {
     font-size: 1.2rem; }
+    @media screen and (max-width: 620px) {
+      .blog__link a {
+        padding-left: 2rem; } }
     .blog__link a:hover {
       color: #992369; }
 
@@ -305,21 +312,14 @@ footer {
         font-size: 0.7rem;
         padding: 0 1rem;
         color: #7f7f7f; }
-  .carousel-setup button {
-    border: none;
-    padding: 0.5rem;
-    text-decoration: none;
-    background: none;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    color: #f69331; }
-    .carousel-setup button:hover {
-      color: #992369; }
-    .carousel-setup button:focus {
-      outline: 0; }
-    .carousel-setup button:active {
-      outline: none;
-      border: none; }
+  .carousel-setup .navi .button {
+    width: 2rem; }
+    .carousel-setup .navi .button path {
+      fill: none;
+      stroke-width: 1.5px;
+      stroke: #992369; }
+      .carousel-setup .navi .button path:hover {
+        stroke: #f69331; }
 
 .aboutpanel {
   color: #fbfbf8;
@@ -408,10 +408,16 @@ footer {
 .blog__wrapper {
   color: #191919;
   padding-bottom: 2rem; }
+  @media screen and (max-width: 620px) {
+    .blog__wrapper {
+      width: 100%; } }
   .blog__wrapper .blog-element {
     margin: 0 auto;
     width: 600px;
     border-bottom: 1px solid #f69331; }
+    @media screen and (max-width: 620px) {
+      .blog__wrapper .blog-element {
+        width: 22rem; } }
     .blog__wrapper .blog-element .heading {
       display: flex;
       margin: 0; }
