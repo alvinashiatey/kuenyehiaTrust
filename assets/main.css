@@ -154,7 +154,7 @@
   margin: 7rem 0 3rem 0;
   border-top: 1.5px solid #992369;
   padding-top: 3rem; }
-  @media screen and (min-width: 620px) {
+  @media screen and (max-width: 620px) {
     .info-banner {
       border-top: none;
       margin: 0 0 3rem 0;
@@ -163,16 +163,19 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0.9rem; }
-    @media screen and (min-width: 620px) {
+    @media screen and (max-width: 620px) {
       .info-banner .banner-wrapper .banner-container {
-        flex-direction: column; } }
+        flex-direction: column;
+        justify-self: center;
+        padding: 0 1rem; } }
     .info-banner .banner-wrapper .banner-container .banner-element {
       width: 22vw; }
-      @media screen and (min-width: 620px) {
+      @media screen and (max-width: 620px) {
         .info-banner .banner-wrapper .banner-container .banner-element {
           width: 100%;
           border-top: 1px solid #f69331;
-          padding-top: 2rem; } }
+          padding-top: 2rem;
+          padding-bottom: 1rem; } }
       .info-banner .banner-wrapper .banner-container .banner-element .heading {
         display: flex;
         align-items: center;
@@ -483,7 +486,6 @@ body {
     cursor: pointer; }
   body .wrapper {
     max-width: 800px;
-    min-height: 100%;
     margin: 0 auto; }
     @media screen and (max-width: 620px) {
       body .wrapper {
