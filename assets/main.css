@@ -4,7 +4,7 @@
   border-bottom: 1px solid #f69331; }
   .prizepanel .prizepanel__inner {
     margin-bottom: 3.8rem; }
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 620px) {
       .prizepanel .prizepanel__inner {
         margin-bottom: 1.5rem; } }
     .prizepanel .prizepanel__inner .heading .panel__switch-alwayson,
@@ -23,7 +23,7 @@
       .prizepanel .prizepanel__inner .heading .panel__switch h3 {
         margin-left: 0.5rem;
         font-size: 2rem; }
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 620px) {
           .prizepanel .prizepanel__inner .heading .panel__switch-alwayson h3,
           .prizepanel .prizepanel__inner .heading .panel__switch h3 {
             font-size: 1.2rem;
@@ -33,13 +33,13 @@
     .prizepanel .prizepanel__inner .display__content .artists {
       display: flex;
       justify-content: space-between; }
-      @media screen and (min-width: 320px) {
+      @media screen and (max-width: 620px) {
         .prizepanel .prizepanel__inner .display__content-alwayson .artists,
         .prizepanel .prizepanel__inner .display__content .artists {
           flex-direction: column;
           justify-content: center;
           align-items: center; } }
-      @media screen and (min-width: 320px) {
+      @media screen and (max-width: 620px) {
         .prizepanel .prizepanel__inner .display__content-alwayson .artists .artist__list ul,
         .prizepanel .prizepanel__inner .display__content .artists .artist__list ul {
           padding: 0 2rem 2rem 0; } }
@@ -64,7 +64,7 @@
       font-size: 1.3rem;
       line-height: 1.7rem;
       padding-left: 2.2rem; }
-      @media screen and (min-width: 320px) {
+      @media screen and (max-width: 620px) {
         .prizepanel .prizepanel__inner .display__content-alwayson p,
         .prizepanel .prizepanel__inner .display__content p {
           font-size: 1rem;
@@ -123,7 +123,7 @@
   .inner-nav-wrap nav ul {
     display: flex;
     justify-content: space-between; }
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 620px) {
       .inner-nav-wrap nav ul {
         flex-direction: column; } }
     .inner-nav-wrap nav ul li {
@@ -132,13 +132,13 @@
       list-style: none; }
       .inner-nav-wrap nav ul li:last-child {
         margin-right: 0.5rem; }
-      @media screen and (min-width: 320px) {
+      @media screen and (max-width: 620px) {
         .inner-nav-wrap nav ul li {
           padding-top: 0.2rem; } }
       .inner-nav-wrap nav ul li a {
         display: inline-block;
         letter-spacing: 0.09rem; }
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 620px) {
           .inner-nav-wrap nav ul li a {
             font-size: 0.6rem; } }
         .inner-nav-wrap nav ul li a:hover {
@@ -151,7 +151,7 @@
   margin: 7rem 0 3rem 0;
   border-top: 1.5px solid #992369;
   padding-top: 3rem; }
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 620px) {
     .info-banner {
       border-top: none;
       margin: 0 0 3rem 0;
@@ -160,12 +160,12 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0.9rem; }
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 620px) {
       .info-banner .banner-wrapper .banner-container {
         flex-direction: column; } }
     .info-banner .banner-wrapper .banner-container .banner-element {
       width: 22vw; }
-      @media screen and (min-width: 320px) {
+      @media screen and (min-width: 620px) {
         .info-banner .banner-wrapper .banner-container .banner-element {
           width: 100%;
           border-top: 1px solid #f69331;
@@ -200,7 +200,8 @@ footer {
   background: #f69331;
   padding-bottom: 1rem;
   font-size: 0.8rem;
-  letter-spacing: 0.09rem; }
+  letter-spacing: 0.09rem;
+  clear: both; }
   footer .footer-container {
     width: 80%;
     margin: 0 auto;
@@ -228,19 +229,19 @@ footer {
       display: flex;
       justify-content: space-between;
       line-height: 0.9rem; }
-      @media screen and (min-width: 320px) {
+      @media screen and (max-width: 620px) {
         footer .footer-container .footer-wrapper {
           flex-direction: column;
           justify-content: center;
           align-items: center;
           text-align: center; } }
-      @media screen and (min-width: 320px) {
+      @media screen and (max-width: 620px) {
         footer .footer-container .footer-wrapper .map nav ul {
           padding: 0em; } }
       footer .footer-container .footer-wrapper .map nav ul li {
         list-style: none;
         margin-top: 0.5rem; }
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 620px) {
           footer .footer-container .footer-wrapper .map nav ul li {
             display: inline-block;
             box-sizing: border-box;
@@ -248,7 +249,7 @@ footer {
         footer .footer-container .footer-wrapper .map nav ul li a {
           color: #fbfbf8;
           display: inline-block; }
-          @media screen and (min-width: 320px) {
+          @media screen and (max-width: 620px) {
             footer .footer-container .footer-wrapper .map nav ul li a {
               padding: 0; } }
           footer .footer-container .footer-wrapper .map nav ul li a:hover, footer .footer-container .footer-wrapper .map nav ul li a:focus {
@@ -258,7 +259,7 @@ footer {
             transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
       footer .footer-container .footer-wrapper .location__info {
         width: 15rem; }
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 620px) {
           footer .footer-container .footer-wrapper .location__info {
             width: 70%; } }
         footer .footer-container .footer-wrapper .location__info a {
@@ -332,7 +333,7 @@ footer {
       .aboutpanel .aboutus__inner .heading .panel__switch-alwayson .icon__white img,
       .aboutpanel .aboutus__inner .heading .panel__switch .icon__white img {
         width: 30px; }
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 620px) {
           .aboutpanel .aboutus__inner .heading .panel__switch-alwayson .icon__white img,
           .aboutpanel .aboutus__inner .heading .panel__switch .icon__white img {
             width: 15px; } }
@@ -340,7 +341,7 @@ footer {
       .aboutpanel .aboutus__inner .heading .panel__switch h3 {
         margin-left: 0.5rem;
         font-size: 2rem; }
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 620px) {
           .aboutpanel .aboutus__inner .heading .panel__switch-alwayson h3,
           .aboutpanel .aboutus__inner .heading .panel__switch h3 {
             font-size: 1.2rem; } }
@@ -351,7 +352,7 @@ footer {
       font-size: 1.3rem;
       line-height: 1.7rem;
       padding-left: 4rem; }
-      @media screen and (min-width: 320px) {
+      @media screen and (max-width: 620px) {
         .aboutpanel .aboutus__inner .display__content-alwayson .list__panel li,
         .aboutpanel .aboutus__inner .display__content .list__panel li {
           font-size: 1rem;
@@ -372,7 +373,7 @@ footer {
           .aboutpanel .aboutus__inner .display__content .advisory-board ul li p span {
             font-size: 1.1rem;
             color: #333333; }
-            @media screen and (min-width: 320px) {
+            @media screen and (max-width: 620px) {
               .aboutpanel .aboutus__inner .display__content-alwayson .advisory-board ul li p span,
               .aboutpanel .aboutus__inner .display__content .advisory-board ul li p span {
                 font-size: 0.9rem;
@@ -385,7 +386,7 @@ footer {
       font-weight: lighter;
       line-height: 1.7rem;
       padding-left: 2.2rem; }
-      @media screen and (min-width: 320px) {
+      @media screen and (max-width: 620px) {
         .aboutpanel .aboutus__inner .display__content-alwayson p,
         .aboutpanel .aboutus__inner .display__content p {
           font-size: 1rem;
@@ -431,7 +432,7 @@ footer {
   width: 40rem;
   margin: 0 auto;
   padding-top: 2rem; }
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 620px) {
     .contact-us__wrapper {
       width: 100%; } }
   .contact-us__wrapper .img__container {
@@ -439,7 +440,7 @@ footer {
     height: 20rem;
     background: #f69331;
     margin: 0 auto; }
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 620px) {
       .contact-us__wrapper .img__container {
         width: 100%; } }
   .contact-us__wrapper .contact-us__panel {
@@ -448,9 +449,11 @@ footer {
     justify-content: space-evenly;
     border-top: 1px solid #992369;
     padding: 1.5rem 0; }
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 620px) {
       .contact-us__wrapper .contact-us__panel {
-        flex-direction: column; } }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
     .contact-us__wrapper .contact-us__panel .heading h1 {
       text-transform: uppercase;
       font-size: 1.8rem; }
@@ -463,6 +466,10 @@ footer {
 .find__us #map {
   height: 25rem; }
 
+html,
+body {
+  height: 100%; }
+
 body {
   font-size: 62.5%;
   font-family: helvetic, sans-serif;
@@ -473,10 +480,11 @@ body {
     cursor: pointer; }
   body .wrapper {
     max-width: 800px;
+    min-height: 100%;
     margin: 0 auto; }
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 620px) {
       body .wrapper {
-        max-width: 320px; } }
+        max-width: 620px; } }
   body canvas {
     position: fixed;
     top: 0;
@@ -484,7 +492,7 @@ body {
     margin: 0;
     padding: 0;
     z-index: -100; }
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 620px) {
       body canvas {
         display: none; } }
   body .active__link {

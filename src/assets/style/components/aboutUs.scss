@@ -17,7 +17,7 @@
           }
           img {
             width: 30px;
-            @media screen and (min-width: $break-small) {
+            @media screen and (max-width: $break-small) {
               width: 15px;
             }
           }
@@ -25,7 +25,7 @@
         h3 {
           margin-left: 0.5rem;
           font-size: 2rem;
-          @media screen and (min-width: $break-small) {
+          @media screen and (max-width: $break-small) {
             font-size: 1.2rem;
           }
         }
@@ -40,7 +40,7 @@
           font-size: 1.3rem;
           line-height: 1.7rem;
           padding-left: 4rem;
-          @media screen and (min-width: $break-small) {
+          @media screen and (max-width: $break-small) {
             font-size: 1rem;
             padding-left: 0rem;
             line-height: 1.3rem;
@@ -60,7 +60,7 @@
               span {
                 font-size: 1.1rem;
                 color: lighten($color: $kb-color, $amount: 10);
-                @media screen and (min-width: $break-small) {
+                @media screen and (max-width: $break-small) {
                   font-size: 0.9rem;
                   padding-left: 0rem;
                   line-height: 1.3rem;
@@ -76,7 +76,7 @@
         font-weight: lighter;
         line-height: 1.7rem;
         padding-left: 2.2rem;
-        @media screen and (min-width: $break-small) {
+        @media screen and (max-width: $break-small) {
           font-size: 1rem;
           padding-left: 0rem;
           line-height: 1.3rem;

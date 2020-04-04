@@ -10,6 +10,11 @@
 @import "./components/contact.scss";
 @import "./components/map.scss";
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-size: 62.5%;
   font-family: helvetic, sans-serif;
@@ -23,8 +28,9 @@ body {
 
   .wrapper {
     max-width: 800px;
+    min-height: 100%;
     margin: 0 auto;
-    @media screen and (min-width: $break-small) {
+    @media screen and (max-width: $break-small) {
       max-width: $break-small;
     }
   }
@@ -35,7 +41,7 @@ body {
     margin: 0;
     padding: 0;
     z-index: -100;
-    @media screen and (min-width: $break-small) {
+    @media screen and (max-width: $break-small) {
       display: none;
     }
   }

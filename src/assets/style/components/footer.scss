@@ -5,6 +5,7 @@ footer {
   padding-bottom: 1rem;
   font-size: 0.8rem;
   letter-spacing: $kernS;
+  clear: both;
   .footer-container {
     width: 80%;
     margin: 0 auto;
@@ -41,7 +42,7 @@ footer {
       display: flex;
       justify-content: space-between;
       line-height: 0.9rem;
-      @media screen and (min-width: $break-small) {
+      @media screen and (max-width: $break-small) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -50,11 +51,11 @@ footer {
       .map {
         nav {
           ul {
-            @media screen and (min-width: $break-small) {
+            @media screen and (max-width: $break-small) {
               padding: 0em;
             }
             li {
-              @media screen and (min-width: $break-small) {
+              @media screen and (max-width: $break-small) {
                 display: inline-block;
                 box-sizing: border-box;
                 padding-left: 0.4rem;
@@ -62,7 +63,7 @@ footer {
               a {
                 color: $kw-color;
                 display: inline-block;
-                @media screen and (min-width: $break-small) {
+                @media screen and (max-width: $break-small) {
                   padding: 0;
                 }
                 &:hover,
@@ -81,7 +82,7 @@ footer {
       }
       .location__info {
         width: 15rem;
-        @media screen and (min-width: $break-small) {
+        @media screen and (max-width: $break-small) {
           width: 70%;
         }
         a {

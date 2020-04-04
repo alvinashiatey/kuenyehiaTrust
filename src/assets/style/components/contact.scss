@@ -2,7 +2,7 @@
   width: 40rem;
   margin: 0 auto;
   padding-top: 2rem;
-  @media screen and (min-width: $break-small) {
+  @media screen and (max-width: $break-small) {
     width: 100%;
   }
   .img__container {
@@ -10,7 +10,7 @@
     height: 20rem;
     background: $ko-color;
     margin: 0 auto;
-    @media screen and (min-width: $break-small) {
+    @media screen and (max-width: $break-small) {
       width: 100%;
     }
   }
@@ -20,8 +20,10 @@
     justify-content: space-evenly;
     border-top: 1px solid $kr-color;
     padding: 1.5rem 0;
-    @media screen and (min-width: $break-small) {
+    @media screen and (max-width: $break-small) {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .heading {
       h1 {
