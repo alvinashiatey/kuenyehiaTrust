@@ -16,6 +16,7 @@ footer {
         ul {
           display: flex;
           justify-content: space-evenly;
+          padding: 0;
           li {
             list-style: none;
             a {
@@ -39,14 +40,33 @@ footer {
     .footer-wrapper {
       display: flex;
       justify-content: space-between;
+      line-height: 0.9rem;
+      @media screen and (min-width: $break-small) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
       .map {
         nav {
           ul {
+            @media screen and (min-width: $break-small) {
+              padding: 0em;
+            }
             li {
+              @media screen and (min-width: $break-small) {
+                display: inline-block;
+                box-sizing: border-box;
+                padding-left: 0.4rem;
+              }
               a {
                 color: $kw-color;
                 display: inline-block;
-                &:hover {
+                @media screen and (min-width: $break-small) {
+                  padding: 0;
+                }
+                &:hover,
+                &:focus {
                   color: $kr-color;
                   font-weight: 700;
                   transform: rotate(-5deg);
@@ -61,7 +81,16 @@ footer {
       }
       .location__info {
         width: 15rem;
-        line-height: 0.9rem;
+        @media screen and (min-width: $break-small) {
+          width: 70%;
+        }
+        a {
+          color: $kw-color;
+          &:hover {
+            color: $kr-color;
+            font-weight: 700;
+          }
+        }
       }
     }
   }

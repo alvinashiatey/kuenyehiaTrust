@@ -2,13 +2,26 @@
   margin: 7rem 0 3rem 0;
   border-top: 1.5px solid $kr-color;
   padding-top: 3rem;
+  @media screen and (min-width: $break-small) {
+    border-top: none;
+    margin: 0 0 3rem 0;
+    padding-top: 0;
+  }
   .banner-wrapper {
     .banner-container {
       display: flex;
       justify-content: space-between;
+      @media screen and (min-width: $break-small) {
+        flex-direction: column;
+      }
       margin: 0 0.9rem;
       .banner-element {
         width: 22vw;
+        @media screen and (min-width: $break-small) {
+          width: 100%;
+          border-top: 1px solid $ko-color;
+          padding-top: 2rem;
+        }
         .heading {
           display: flex;
           align-items: center;

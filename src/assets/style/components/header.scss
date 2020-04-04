@@ -16,6 +16,9 @@
     ul {
       display: flex;
       justify-content: space-between;
+      @media screen and (min-width: $break-small) {
+        flex-direction: column;
+      }
       li {
         margin-left: 0.8rem;
         font-size: 0.8rem;
@@ -24,9 +27,16 @@
         &:last-child {
           margin-right: 0.5rem;
         }
+
+        @media screen and (min-width: $break-small) {
+          padding-top: 0.2rem;
+        }
         a {
           display: inline-block;
           letter-spacing: $kernS;
+          @media screen and (min-width: $break-small) {
+            font-size: 0.6rem;
+          }
           &:hover {
             color: $ko-color;
             font-weight: 700;

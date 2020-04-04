@@ -98,15 +98,24 @@
   .inner-nav-wrap nav ul {
     display: flex;
     justify-content: space-between; }
+    @media screen and (min-width: 320px) {
+      .inner-nav-wrap nav ul {
+        flex-direction: column; } }
     .inner-nav-wrap nav ul li {
       margin-left: 0.8rem;
       font-size: 0.8rem;
       list-style: none; }
       .inner-nav-wrap nav ul li:last-child {
         margin-right: 0.5rem; }
+      @media screen and (min-width: 320px) {
+        .inner-nav-wrap nav ul li {
+          padding-top: 0.2rem; } }
       .inner-nav-wrap nav ul li a {
         display: inline-block;
         letter-spacing: 0.09rem; }
+        @media screen and (min-width: 320px) {
+          .inner-nav-wrap nav ul li a {
+            font-size: 0.6rem; } }
         .inner-nav-wrap nav ul li a:hover {
           color: #f69331;
           font-weight: 700;
@@ -117,12 +126,25 @@
   margin: 7rem 0 3rem 0;
   border-top: 1.5px solid #992369;
   padding-top: 3rem; }
+  @media screen and (min-width: 320px) {
+    .info-banner {
+      border-top: none;
+      margin: 0 0 3rem 0;
+      padding-top: 0; } }
   .info-banner .banner-wrapper .banner-container {
     display: flex;
     justify-content: space-between;
     margin: 0 0.9rem; }
+    @media screen and (min-width: 320px) {
+      .info-banner .banner-wrapper .banner-container {
+        flex-direction: column; } }
     .info-banner .banner-wrapper .banner-container .banner-element {
       width: 22vw; }
+      @media screen and (min-width: 320px) {
+        .info-banner .banner-wrapper .banner-container .banner-element {
+          width: 100%;
+          border-top: 1px solid #f69331;
+          padding-top: 2rem; } }
       .info-banner .banner-wrapper .banner-container .banner-element .heading {
         display: flex;
         align-items: center;
@@ -162,7 +184,8 @@ footer {
       border-bottom: 1px solid #fbfbf8; }
       footer .footer-container .footer-section-one .social__links ul {
         display: flex;
-        justify-content: space-evenly; }
+        justify-content: space-evenly;
+        padding: 0; }
         footer .footer-container .footer-section-one .social__links ul li {
           list-style: none; }
           footer .footer-container .footer-section-one .social__links ul li a {
@@ -178,21 +201,46 @@ footer {
             margin-right: 1.5rem; }
     footer .footer-container .footer-wrapper {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      line-height: 0.9rem; }
+      @media screen and (min-width: 320px) {
+        footer .footer-container .footer-wrapper {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center; } }
+      @media screen and (min-width: 320px) {
+        footer .footer-container .footer-wrapper .map nav ul {
+          padding: 0em; } }
       footer .footer-container .footer-wrapper .map nav ul li {
         list-style: none;
         margin-top: 0.5rem; }
+        @media screen and (min-width: 320px) {
+          footer .footer-container .footer-wrapper .map nav ul li {
+            display: inline-block;
+            box-sizing: border-box;
+            padding-left: 0.4rem; } }
         footer .footer-container .footer-wrapper .map nav ul li a {
           color: #fbfbf8;
           display: inline-block; }
-          footer .footer-container .footer-wrapper .map nav ul li a:hover {
+          @media screen and (min-width: 320px) {
+            footer .footer-container .footer-wrapper .map nav ul li a {
+              padding: 0; } }
+          footer .footer-container .footer-wrapper .map nav ul li a:hover, footer .footer-container .footer-wrapper .map nav ul li a:focus {
             color: #992369;
             font-weight: 700;
             transform: rotate(-5deg);
             transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95); }
       footer .footer-container .footer-wrapper .location__info {
-        width: 15rem;
-        line-height: 0.9rem; }
+        width: 15rem; }
+        @media screen and (min-width: 320px) {
+          footer .footer-container .footer-wrapper .location__info {
+            width: 70%; } }
+        footer .footer-container .footer-wrapper .location__info a {
+          color: #fbfbf8; }
+          footer .footer-container .footer-wrapper .location__info a:hover {
+            color: #992369;
+            font-weight: 700; }
 
 .carousel-setup {
   display: flex;
@@ -366,6 +414,9 @@ body {
   body .wrapper {
     max-width: 800px;
     margin: 0 auto; }
+    @media screen and (min-width: 320px) {
+      body .wrapper {
+        max-width: 320px; } }
   body canvas {
     position: fixed;
     top: 0;

@@ -24,6 +24,9 @@ body {
   .wrapper {
     max-width: 800px;
     margin: 0 auto;
+    @media screen and (min-width: $break-small) {
+      max-width: $break-small;
+    }
   }
   canvas {
     position: fixed;
