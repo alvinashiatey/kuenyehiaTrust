@@ -5,7 +5,6 @@ footer {
   padding-bottom: 1rem;
   font-size: 0.8rem;
   letter-spacing: $kernS;
-  clear: both;
   .footer-container {
     width: 80%;
     margin: 0 auto;
@@ -14,6 +13,7 @@ footer {
     .footer-section-one {
       border-bottom: 1px solid $kw-color;
       .social__links {
+        width: 20rem;
         ul {
           display: flex;
           justify-content: space-evenly;
@@ -30,17 +30,13 @@ footer {
                 transition: all 300ms $kease;
               }
             }
-            &::before {
-              content: "|";
-              margin-right: 1.5rem;
-            }
           }
         }
       }
     }
     .footer-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       line-height: 0.9rem;
       @media screen and (max-width: $break-small) {
         flex-direction: column;

@@ -1,5 +1,5 @@
 import "./assets/style/main.scss";
-import { gsap } from "gsap/all";
+import { gsap, Linear } from "gsap/all";
 import * as p5 from "p5";
 import "/Users/alvinkwabena/Documents/GitHub/kprize/node_modules/normalize.css/normalize.css";
 
@@ -58,6 +58,7 @@ mouseHandlers();
 
 const animation = () => {
   const carousel = document.querySelector(".carousel");
+
   if (carousel) {
     gsap.from(carousel, 0.9, {
       y: 100,

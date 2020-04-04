@@ -1,0 +1,27 @@
+.marq__wrapper {
+  background-color: $ko-color;
+  color: $kw-color;
+  font-family: helvetica;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  .marq {
+    display: flex;
+    white-space: nowrap;
+    min-width: 100%;
+    .news__message {
+      padding-left: 0.6em;
+      animation: slide-left 40s linear infinite;
+      letter-spacing: 0.2rem;
+      @keyframes slide-left {
+        from {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+        to {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+      }
+    }
+  }
+}
