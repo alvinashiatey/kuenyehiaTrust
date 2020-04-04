@@ -66,7 +66,9 @@ animation();
 
 let s = sk => {
   sk.setup = () => {
-    sk.createCanvas(window.innerWidth, window.innerHeight);
+    let w = window.innerWidth;
+    let h = window.innerHeight;
+    sk.createCanvas(w, h);
   };
 
   let xoff = 0.0;
@@ -80,6 +82,10 @@ let s = sk => {
     sk.noStroke();
     sk.fill(153, cr, 102 + n);
     // 153, 35, 105
+  };
+
+  sk.windowResized = () => {
+    sk.resizeCanvas(w, h);
   };
 };
 
