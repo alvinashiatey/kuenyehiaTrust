@@ -6,7 +6,7 @@ footer {
   font-size: 0.8rem;
   letter-spacing: $kernS;
   .footer-container {
-    width: 80%;
+    width: 70vw;
     margin: 0 auto;
     padding-top: 1.5rem;
 
@@ -14,6 +14,7 @@ footer {
       border-bottom: 1px solid $kw-color;
       .social__links {
         width: 20rem;
+        margin: 0 auto;
         ul {
           display: flex;
           justify-content: space-evenly;

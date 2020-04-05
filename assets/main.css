@@ -215,13 +215,14 @@ footer {
   font-size: 0.8rem;
   letter-spacing: 0.09rem; }
   footer .footer-container {
-    width: 80%;
+    width: 70vw;
     margin: 0 auto;
     padding-top: 1.5rem; }
     footer .footer-container .footer-section-one {
       border-bottom: 1px solid #fbfbf8; }
       footer .footer-container .footer-section-one .social__links {
-        width: 20rem; }
+        width: 20rem;
+        margin: 0 auto; }
         footer .footer-container .footer-section-one .social__links ul {
           display: flex;
           justify-content: space-evenly;
@@ -478,6 +479,32 @@ footer {
 .fixed_nav {
   position: fixed;
   left: 0; }
+
+.initiatives {
+  color: #191919;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column; }
+  .initiatives h3 {
+    color: #191919; }
+  .initiatives .telling__tall {
+    margin-top: 2rem; }
+    .initiatives .telling__tall ul li {
+      list-style: none;
+      font-weight: lighter;
+      font-size: 1.3rem;
+      line-height: 1.7rem; }
+  .initiatives .creative-ace {
+    margin-top: 2rem; }
+    .initiatives .creative-ace ul li {
+      list-style: none;
+      font-weight: lighter;
+      font-size: 1.3rem;
+      line-height: 1.7rem; }
+
+.white {
+  background: #fbfbf8; }
 
 .blog__wrapper {
   color: #191919;
