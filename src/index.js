@@ -1,7 +1,8 @@
 import "./assets/style/main.scss";
-import { gsap, Linear } from "gsap/all";
+import { gsap, ScrollToPlugin } from "gsap/all";
 import * as p5 from "p5";
 import "/Users/alvinkwabena/Documents/GitHub/kprize/node_modules/normalize.css/normalize.css";
+gsap.registerPlugin(ScrollToPlugin);
 
 const mouseHandlers = () => {
   const carousel = document.querySelector(".carousel");
@@ -58,12 +59,35 @@ mouseHandlers();
 
 const animation = () => {
   const carousel = document.querySelector(".carousel");
+  const aboutNav = document.querySelector(".about__nav");
+  const aboutBtn = document.querySelectorAll(".about__btn");
 
   if (carousel) {
     gsap.from(carousel, 0.9, {
       y: 100,
       opacity: 0,
       ease: "power.inOut",
+    });
+  }
+
+  // adding sticky to about nav
+  if (aboutNav) {
+    let stickyTop = aboutNav.offsetTop;
+    document.addEventListener("scroll", () => {
+      if (window.scrollY >= stickyTop) {
+        aboutNav.classList.add("fixed_nav");
+      } else {
+        aboutNav.classList.remove("fixed_nav");
+      }
+    });
+
+    aboutBtn.forEach((el, index) => {
+      el.addEventListener("click", () => {
+        gsap.to(window, 1, {
+          scrollTo: { y: `#panel` + (index + 1), offsetY: 35 },
+          ease: "power.inOut",
+        });
+      });
     });
   }
 };

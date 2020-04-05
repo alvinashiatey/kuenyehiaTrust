@@ -3,7 +3,10 @@ layout: layouts/default.njk
 pageTitle: About Us
 ---
 
-<div class="aboutpanel">
+{%include "about-nav.njk"%} 
+
+<div class="aboutpanel" id="panel1">
+
   <div class="wrapper">
     <div class="aboutus__inner">
       <div class="heading">
@@ -42,7 +45,7 @@ pageTitle: About Us
     </div>
   </div>
 </div>
-<div class="aboutpanel orange">
+<div class="aboutpanel orange" id="panel2">
   <div class="wrapper">
     <div class="aboutus__inner">
       <div class="heading">
@@ -118,7 +121,7 @@ pageTitle: About Us
     </div>
   </div>
 </div>
-<div class="aboutpanel">
+<div class="aboutpanel" id="panel3">
   <div class="wrapper">
     <div class="aboutus__inner">
       <div class="heading">
@@ -129,8 +132,8 @@ pageTitle: About Us
           <h3>TRUSTEES</h3>
         </a>
       </div>
-      <div class="display__content close__panel">
-        <div class="advisory-board">
+      <div class="display__content">
+        <div class="trustees">
           <ul>
             <li>
               <p>
