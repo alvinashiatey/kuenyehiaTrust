@@ -18,7 +18,7 @@
       }
       margin: 0 0.9rem;
       .banner-element {
-        width: 22vw;
+        padding: 0 1rem;
         @media screen and (max-width: $break-small) {
           width: 100%;
           border-top: 1px solid $ko-color;
