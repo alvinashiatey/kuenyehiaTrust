@@ -3,7 +3,7 @@
   align-items: center;
   margin: 4rem 0;
   .carousel-container {
-    width: 700px;
+    max-width: 70em;
     height: 100%;
     overflow: hidden;
     margin: 2rem auto 0 auto;
@@ -15,10 +15,9 @@
       width: inherit;
       height: inherit;
       .slide {
+        max-width: 70em;
         .slide__img {
           position: relative;
-          width: 700px;
-          height: auto;
           @media screen and (max-width: $break-medium) {
             width: 65vw;
           }
@@ -31,11 +30,11 @@
             background: $ko-color;
             opacity: 70%;
           }
-          .responsive__img {
+          img {
             mix-blend-mode: multiply;
             display: block;
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 64.42em;
+            min-height: 20em;
             // object-fit: fill;s
             @media screen and (max-width: $break-medium) {
               width: 65vw;

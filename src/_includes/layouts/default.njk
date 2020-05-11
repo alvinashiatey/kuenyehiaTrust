@@ -1,17 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
     <title>{{ pageTitle or siteData.name }}</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
-    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDKdwsFsIw1STe6Xf2zUFH0Sk8n6YQza40"></script>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <script
+      type="text/javascript"
+      src="//maps.googleapis.com/maps/api/js?key=AIzaSyDKdwsFsIw1STe6Xf2zUFH0Sk8n6YQza40"
+    ></script>
   </head>
   <body>
-   {% include "header.njk" %}
+    {% include "header.njk" %}
     {{ content | safe }}
-   {% include "footer.njk" %} 
+    {% include "footer.njk" %}
     <script src="/assets/index.js"></script>
   </body>
 </html>

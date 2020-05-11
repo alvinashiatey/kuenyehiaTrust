@@ -12,10 +12,11 @@ footer {
     padding-top: 1.5rem;
 
     .footer-section-one {
-      border-bottom: 1px solid $kw-color;
+      border-bottom: 3px solid $kw-color;
       .social__links {
-        width: 20rem;
+        width: auto;
         margin: 0 auto;
+        font-weight: bold;
         ul {
           display: flex;
           justify-content: space-evenly;
@@ -79,7 +80,7 @@ footer {
         }
       }
       .location__info {
-        width: 15rem;
+        width: 16rem;
         @media screen and (max-width: $break-small) {
           width: 70%;
         }

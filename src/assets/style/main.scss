@@ -18,6 +18,12 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: spaceGrotesk;
+  src: url(../font/SpaceGrotesk-SemiBold.woff2);
+  font-weight: bold;
+}
+
 html,
 body {
   height: 100%;
