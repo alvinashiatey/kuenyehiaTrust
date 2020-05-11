@@ -1,7 +1,9 @@
 const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -19,6 +21,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "main.css",
     }),
+    new CleanWebpackPlugin(),
+    new CopyPlugin([{ from: "./src/assets/imgs", to: "./imgs/" }]),
   ],
   module: {
     rules: [
@@ -29,12 +33,13 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+
       {
         test: /\.s?[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: "file-loader",
