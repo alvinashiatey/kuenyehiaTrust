@@ -117,7 +117,7 @@
       color: #992369; }
 
 .nav {
-  border-bottom: 1px solid #992369; }
+  border-bottom: 3px solid #992369; }
 
 .inner-nav-wrap {
   margin-top: 2rem;
@@ -605,6 +605,15 @@ footer {
   to {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%); } }
+
+.home__about {
+  padding-bottom: 64px; }
+  .home__about .wrapper .aboutus__inner .display__content {
+    font-size: 1.3rem; }
+    .home__about .wrapper .aboutus__inner .display__content ul {
+      list-style: none;
+      padding: 0;
+      text-indent: -0.8rem; }
 
 @font-face {
   font-family: spaceGrotesk;
