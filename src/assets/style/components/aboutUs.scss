@@ -1,6 +1,6 @@
 .about__nav {
   background-color: $kw-color;
-  padding: 0.5rem;
+  padding: 0.5rem 0 2em 0;
   width: 100%;
   height: 1.5rem;
   z-index: 3;
@@ -8,22 +8,21 @@
   top: 0;
   nav {
     ul {
-      padding: 0;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       li {
         list-style: none;
-        font-size: 0.8rem;
+        font-size: 1.3rem;
         a {
           display: inline-block;
           letter-spacing: $kernS;
+          padding-left: 2em;
           @media screen and (max-width: $break-small) {
             font-size: 0.6rem;
           }
           &:hover {
             color: $ko-color;
-            font-weight: 700;
             transform: rotate(-5deg);
             transition: all 600ms 300ms $kease;
           }
@@ -37,6 +36,9 @@
   color: $kw-color;
   background: $kr-color;
   padding: 1rem 3rem;
+  blockquote {
+    text-indent: -0.6em;
+  }
   .aboutus__inner {
     margin-bottom: 3.8rem;
     .heading {
@@ -72,6 +74,7 @@
         @media screen and (max-width: $break-small) {
           padding: 0;
         }
+
         li {
           list-style: none;
           font-weight: lighter;
@@ -125,7 +128,6 @@
 
 .advisory-board {
   span {
-    font-size: 1.1rem;
     color: lighten($color: $kb-color, $amount: 10);
     @media screen and (max-width: $break-small) {
       font-size: 0.9rem;
@@ -164,6 +166,7 @@
   .telling__tall {
     margin-top: 2rem;
     ul {
+      padding: 0em;
       li {
         list-style: none;
         font-weight: lighter;
@@ -176,6 +179,7 @@
     margin-top: 2rem;
     ul {
       li {
+        text-indent: -0.9em;
         list-style: none;
         font-weight: lighter;
         font-size: 1.3rem;

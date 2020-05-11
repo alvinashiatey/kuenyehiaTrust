@@ -1,9 +1,10 @@
 footer {
+  margin-top: auto;
   color: $kw-color;
   width: 100%;
   background: $ko-color;
   padding-bottom: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: $kernS;
   .footer-container {
     width: 70vw;
@@ -38,7 +39,7 @@ footer {
     .footer-wrapper {
       display: flex;
       justify-content: space-evenly;
-      line-height: 0.9rem;
+      line-height: 150%;
       @media screen and (max-width: $break-small) {
         flex-direction: column;
         justify-content: center;

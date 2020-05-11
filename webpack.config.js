@@ -7,18 +7,18 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "assets"),
-    filename: `index.js`
+    filename: `index.js`,
   },
   devServer: {
-    contentBase: "./assets"
+    contentBase: "./assets",
   },
   optimization: {
-    minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()]
+    minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "main.css"
-    })
+      filename: "main.css",
+    }),
   ],
   module: {
     rules: [
@@ -26,14 +26,26 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
+          loader: "babel-loader",
+        },
       },
       {
         test: /\.s?[ac]ss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-      }
-    ]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/",
+            },
+          },
+        ],
+      },
+    ],
   },
-  devtool: "cheap-module-source-map"
+  devtool: "cheap-module-source-map",
 };
