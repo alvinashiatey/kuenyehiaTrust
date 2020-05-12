@@ -10,6 +10,13 @@
     height: 20rem;
     background: $ko-color;
     margin: 0 auto;
+    .img-wrap {
+      background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/c_scale,h_1848,q_50/v1589243383/Kuenyehia%20Trust/carousel/catharsis_I_fkbn9z.jpg");
+      background-repeat: no-repeat;
+      width: 33rem;
+      height: 20rem;
+      background-size: cover;
+    }
     @media screen and (max-width: $break-small) {
       width: 100%;
     }

@@ -301,8 +301,18 @@ footer {
       height: inherit; }
       .carousel-setup .carousel-container .carousel .slide {
         max-width: 70em; }
+        .carousel-setup .carousel-container .carousel .slide #carousel-img1 {
+          background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589239671/Kuenyehia%20Trust/carousel/3_adnul1.jpg"); }
+        .carousel-setup .carousel-container .carousel .slide #carousel-img2 {
+          background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589239441/Kuenyehia%20Trust/carousel/Felix6_wjhf1x.jpg"); }
+        .carousel-setup .carousel-container .carousel .slide #carousel-img3 {
+          background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589239445/Kuenyehia%20Trust/carousel/Felix60_ctvkf3.jpg"); }
         .carousel-setup .carousel-container .carousel .slide .slide__img {
-          position: relative; }
+          position: relative;
+          width: 64.42em;
+          height: 40em;
+          background-repeat: no-repeat;
+          background-size: cover; }
           @media screen and (max-width: 900px) {
             .carousel-setup .carousel-container .carousel .slide .slide__img {
               width: 65vw; } }
@@ -313,7 +323,7 @@ footer {
             width: 100%;
             height: 99.6%;
             background: #f69331;
-            opacity: 70%; }
+            opacity: 30%; }
           .carousel-setup .carousel-container .carousel .slide .slide__img img {
             mix-blend-mode: multiply;
             display: block;
@@ -331,7 +341,8 @@ footer {
   .carousel-setup .navi {
     width: 50px;
     height: 50px;
-    margin: auto; }
+    margin: auto;
+    cursor: pointer; }
     .carousel-setup .navi .button {
       width: 2rem;
       display: block;
@@ -554,6 +565,12 @@ footer {
     height: 20rem;
     background: #f69331;
     margin: 0 auto; }
+    .contact-us__wrapper .img__container .img-wrap {
+      background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/c_scale,h_1848,q_50/v1589243383/Kuenyehia%20Trust/carousel/catharsis_I_fkbn9z.jpg");
+      background-repeat: no-repeat;
+      width: 33rem;
+      height: 20rem;
+      background-size: cover; }
     @media screen and (max-width: 620px) {
       .contact-us__wrapper .img__container {
         width: 100%; } }
@@ -607,11 +624,25 @@ footer {
 .home__about {
   padding-bottom: 64px; }
   .home__about .wrapper .aboutus__inner .display__content {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    line-height: 120%; }
     .home__about .wrapper .aboutus__inner .display__content ul {
       list-style: none;
       padding: 0;
       text-indent: -0.8rem; }
+
+.support__content .intro__text p {
+  font-size: 1.3rem;
+  line-height: 150%; }
+
+.support__content #support-img1 {
+  background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242397/Kuenyehia%20Trust/carousel/6_yqfmuv.jpg"); }
+
+.support__content #support-img2 {
+  background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242391/Kuenyehia%20Trust/carousel/5_s0dgww.jpg"); }
+
+.support__content #support-img3 {
+  background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242559/Kuenyehia%20Trust/carousel/Felix57_s0yoop.jpg"); }
 
 @font-face {
   font-family: spaceGrotesk;

@@ -6,40 +6,46 @@ gsap.registerPlugin(ScrollToPlugin);
 
 const mouseHandlers = () => {
   const carousel = document.querySelector(".carousel");
-  const carouselSlides = document.querySelectorAll(".slide");
-  const prevBtn = document.querySelector("#prev");
-  const nextBtn = document.querySelector("#next");
+  const carouselSlides = document.querySelectorAll(".slide__img");
+  const prevBtn = document.querySelector("#prevbtn");
+  const nextBtn = document.querySelector("#nextbtn");
   const panels = document.querySelector(".display__content");
   const panelSwitchs = document.querySelectorAll(".panel__switch");
-
-  let counter = 0;
-
+  let counter = 1;
   let size;
 
+  const carouselMoveNext = () => {
+    if (counter >= carouselSlides.length - 1) return;
+    gsap.to(carousel, 0.95, {
+      x: `-=${size}`,
+      ease: "power3.inOut",
+    });
+    counter++;
+  };
+
+  const carouselMovePrev = () => {
+    if (counter <= 0) return;
+    gsap.to(carousel, 2, {
+      x: `+=${size}`,
+      ease: "power3.inOut",
+    });
+    counter--;
+  };
+
   if (carousel) {
-    size = carousel.clientWidth;
+    size = carouselSlides[0].clientWidth;
+    console.log(size * carouselSlides.length);
     window.addEventListener("resize", () => {
       size = carousel.clientWidth;
     });
 
+    carousel.style.transform = `translateX(-${size * counter}px)`;
     nextBtn.addEventListener("click", () => {
-      if (counter >= carouselSlides.length - 1) return;
-      gsap.to(carousel, 2, {
-        x: `-=${size}`,
-        ease: "power3.inOut",
-      });
-      counter++;
-      console.log("next", counter, carouselSlides.length);
+      carouselMoveNext();
     });
 
     prevBtn.addEventListener("click", () => {
-      if (counter <= 0) return;
-      gsap.to(carousel, 2, {
-        x: `+=${size}`,
-        ease: "power3.inOut",
-      });
-      counter--;
-      console.log("prev", counter, carouselSlides.length);
+      carouselMovePrev();
     });
   }
 
