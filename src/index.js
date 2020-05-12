@@ -11,7 +11,7 @@ const mouseHandlers = () => {
   const nextBtn = document.querySelector("#nextbtn");
   const panels = document.querySelector(".display__content");
   const panelSwitchs = document.querySelectorAll(".panel__switch");
-  let counter = 1;
+  let counter = 0;
   let size;
 
   const carouselMoveNext = () => {
