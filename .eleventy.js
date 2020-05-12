@@ -1,8 +1,8 @@
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("assets/");
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
@@ -17,8 +17,8 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src",
       output: "dist",
-      data: "_data"
+      data: "_data",
     },
-    dataTemplateEngine: "njk"
+    dataTemplateEngine: "njk",
   };
 };
