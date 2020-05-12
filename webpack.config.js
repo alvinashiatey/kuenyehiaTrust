@@ -21,8 +21,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "main.css",
     }),
-    new CleanWebpackPlugin(),
     new CopyPlugin([{ from: "./src/assets/imgs", to: "./imgs/" }]),
+    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
