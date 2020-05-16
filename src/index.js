@@ -315,3 +315,9 @@ if (mapDOM) {
   google.maps.event.addDomListener(window, "load", initMap);
   initMap();
 }
+
+const appendDate = (() => {
+  const copyright = document.getElementById("copyright");
+  const date = new Date().getFullYear();
+  copyright.innerHTML += date;
+})();

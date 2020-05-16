@@ -55,5 +55,23 @@
         "Sefa Nkansa"
       ]
     }
+  },
+  {
+    "id": 4,
+    "Year": "2015",
+    "artists": {
+      "list": [
+        "Kwame Akoto-Bamfo [winner]",
+        "Kelvin Haizel [1st runner-up]",
+        "Issac Addico [2nd runner-up]",
+        "Negyem Adonoo",
+        "Chris Agbetsoamedo",
+        "Isshaq Ismail",
+        "Kweku Ampandu Appah",
+        "Kwadwo Boateng Asare",
+        "Ian Kwakye",
+        "Setor Fiadzigbey"
+      ]
+    }
   }
 ]

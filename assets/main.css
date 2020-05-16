@@ -220,6 +220,8 @@ footer {
     width: 70vw;
     margin: 0 auto;
     padding-top: 1.5rem; }
+    footer .footer-container p {
+      text-align: center; }
     footer .footer-container .footer-section-one {
       border-bottom: 3px solid #fbfbf8; }
       footer .footer-container .footer-section-one .social__links {
