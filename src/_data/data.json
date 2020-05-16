@@ -17,9 +17,7 @@
         "Lesley Kafui Semackor",
         "John Edem Tamakloe"
       ]
-    },
-    "created_at": "2020-04-02T21:12:27.234Z",
-    "updated_at": "2020-04-02T21:21:53.983Z"
+    }
   },
   {
     "id": 2,
@@ -37,6 +35,24 @@
         "Sela Adjei",
         "Priscilla Owusu-Mensah",
         "Lesley Kafui Semackor"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "Year": "2016",
+    "artists": {
+      "list": [
+        "Bright Tetteh Ackwerh [winner]",
+        "Setor Fiadzigbey [1st runner-up]",
+        "Derek Owusu Bempah [2nd runner-up]",
+        "Maxwell Boadi",
+        "Enam Bosoka",
+        "Gordon Kegya",
+        "Isshaq Ismail",
+        "Mustapha Mohammed",
+        "Peter Schaub-Nzoley",
+        "Sefa Nkansa"
       ]
     }
   }
