@@ -5,13 +5,15 @@
       line-height: 150%;
     }
   }
-  #support-img1 {
-    background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242397/Kuenyehia%20Trust/carousel/6_yqfmuv.jpg");
-  }
-  #support-img2 {
-    background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242391/Kuenyehia%20Trust/carousel/5_s0dgww.jpg");
-  }
-  #support-img3 {
-    background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242559/Kuenyehia%20Trust/carousel/Felix57_s0yoop.jpg");
+  .support__carousel {
+    #support-img1 {
+      background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242397/Kuenyehia%20Trust/carousel/6_yqfmuv.jpg");
+    }
+    #support-img2 {
+      background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242391/Kuenyehia%20Trust/carousel/5_s0dgww.jpg");
+    }
+    #support-img3 {
+      background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242559/Kuenyehia%20Trust/carousel/Felix57_s0yoop.jpg");
+    }
   }
 }

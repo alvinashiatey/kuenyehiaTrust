@@ -15,7 +15,7 @@ module.exports = {
     contentBase: "./assets",
   },
   optimization: {
-    minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
+    minimizer: [new TerserPlugin(), new OptimizeCssAssetsPlugin()],
   },
   plugins: [
     new MiniCssExtractPlugin({

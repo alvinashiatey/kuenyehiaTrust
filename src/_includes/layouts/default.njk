@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
+    {% set css %}
+      {%include "assets/main.css" %} 
+    {% endset %}
+    <style>
+      {% block maincss %} {{ css | safe }} {% endblock %}
+    </style>
     <title>{{ pageTitle or siteData.name }}</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
     <link
