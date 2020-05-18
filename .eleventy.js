@@ -4,6 +4,7 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPassthroughCopy("assets/");
+  eleventyConfig.addPassthroughCopy({ "assets/fonts": "/assets/fonts" });
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
