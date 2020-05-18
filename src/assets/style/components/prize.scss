@@ -14,10 +14,6 @@
         align-items: center;
         color: $kb-color;
         .icon_wine {
-          &:hover {
-            transform: rotate(90deg);
-            transition: 400ms ease-in-out;
-          }
           img {
             width: 30px;
           }
@@ -46,9 +42,7 @@
         }
         .artist__list {
           ul {
-            @media screen and (max-width: $break-small) {
-              padding: 0 2rem 2rem 0;
-            }
+            padding: 0;
             li {
               list-style: none;
               font-size: 1.3rem;
@@ -67,7 +61,8 @@
           overflow: hidden;
         }
       }
-      p {
+      p,
+      a {
         margin: 0;
         font-size: 1.3rem;
 
@@ -79,14 +74,21 @@
           line-height: 1.3rem;
         }
       }
+      .catalogue {
+        cursor: pointer;
+        a {
+          color: $ko-color;
+          svg {
+            width: 2rem;
+            height: 2rem;
+            fill: $ko-color;
+          }
+        }
+      }
     }
   }
 }
 
 .orange {
   background: $ko-color;
-}
-
-.close__panel {
-  display: none;
 }

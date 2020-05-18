@@ -41,6 +41,7 @@ pageTitle: Kuenyehia Prize
     </div>
   </div>
 </div>
+
 {% for lists in data %}
 <div class="prizepanel">
   <div class="wrapper">
@@ -53,7 +54,7 @@ pageTitle: Kuenyehia Prize
           <h3>{{ lists.Year }}</h3>
         </a>
       </div>
-      <div class="display__content close__panel">
+      <div class="display__content">
         <div class="artists">
           <div class="artist__list">
             <ul>
@@ -65,11 +66,22 @@ pageTitle: Kuenyehia Prize
               </li>
               {%endfor%}
             </ul>
+            <div class="catalogue">
+        
+        <a href="{{lists.catalogue}}" target="_blank">
+        <svg class="icon__pdf">
+            <use
+              xlink:href="/assets/imgs/pdf.svg#kt-document-file-pdf"
+            ></use>
+          </svg>
+        {{lists.Year}} Catalogue</a>
+        </div>
           </div>
           <div class="prize-slide">
             <div class="slide"></div>
           </div>
         </div>
+        
       </div>
     </div>
   </div>

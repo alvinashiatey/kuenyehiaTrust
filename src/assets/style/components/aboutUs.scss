@@ -1,5 +1,4 @@
 .about__nav {
-  background-color: $kw-color;
   padding: 0.5rem 0 2em 0;
   width: 100%;
   height: 1.5rem;
@@ -33,8 +32,7 @@
 }
 
 .aboutpanel {
-  color: $kw-color;
-  background: $kr-color;
+  color: $kb-color;
   padding: 1rem 3rem;
   blockquote {
     text-indent: -0.6em;
@@ -46,7 +44,7 @@
       .panel__switch {
         display: flex;
         align-items: center;
-        color: $kw-color;
+        color: $kb-color;
         .icon__white {
           &:hover {
             transform: rotate(90deg);
@@ -137,7 +135,7 @@
 .trustees {
   span {
     font-size: 1.1rem;
-    color: lighten($color: $ko-color, $amount: 10);
+    color: $kr-color;
     @media screen and (max-width: $break-small) {
       font-size: 0.9rem;
       padding-left: 0rem;
@@ -182,8 +180,4 @@
       }
     }
   }
-}
-
-.white {
-  background: $kw-color;
 }

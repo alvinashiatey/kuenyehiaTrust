@@ -16,7 +16,7 @@ const mouseHandlers = () => {
 
   const carouselMoveNext = () => {
     if (counter >= carouselSlides.length - 1) return;
-    gsap.to(carousel, 0.95, {
+    gsap.to(carousel, 2, {
       x: `-=${size}`,
       ease: "power3.inOut",
     });
@@ -321,3 +321,20 @@ const appendDate = (() => {
   const date = new Date().getFullYear();
   copyright.innerHTML += date;
 })();
+
+window.onload = function () {
+  //initialize swiper when document ready
+  var swiper = new Swiper(".swiper-container", {
+    loop: true,
+    lazy: true,
+    keyboard: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+};

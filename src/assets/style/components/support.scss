@@ -4,16 +4,51 @@
       font-size: 1.3rem;
       line-height: 150%;
     }
+    a {
+      cursor: pointer;
+      color: $ko-color;
+      display: inline-block;
+
+      &:hover {
+        transform: rotate(-5deg);
+        transition: all 300ms $kease;
+      }
+    }
   }
-  .support__carousel {
-    #support-img1 {
-      background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242397/Kuenyehia%20Trust/carousel/6_yqfmuv.jpg");
+  .swiper-container {
+    margin: 2rem auto;
+    width: 75em;
+    height: 40em;
+    .swiper-wrapper {
+      #support-img1 {
+        background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242397/Kuenyehia%20Trust/carousel/6_yqfmuv.jpg");
+      }
+      #support-img2 {
+        background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242391/Kuenyehia%20Trust/carousel/5_s0dgww.jpg");
+      }
+      #support-img3 {
+        background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242559/Kuenyehia%20Trust/carousel/Felix57_s0yoop.jpg");
+      }
+      .slide__img {
+        margin: 0 auto;
+        position: relative;
+        width: 64.42em;
+        height: 40em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and (max-width: $break-medium) {
+          width: 65vw;
+        }
+        @media screen and (max-width: $break-small) {
+          width: 100vw;
+        }
+      }
     }
-    #support-img2 {
-      background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242391/Kuenyehia%20Trust/carousel/5_s0dgww.jpg");
+    .btn {
+      color: $kr-color;
     }
-    #support-img3 {
-      background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242559/Kuenyehia%20Trust/carousel/Felix57_s0yoop.jpg");
+    @media screen and (max-width: $break-small) {
+      width: 100vw;
     }
   }
 }
