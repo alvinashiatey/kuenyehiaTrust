@@ -7,6 +7,17 @@
     <style type="text/css" nonce>
       {% block maincss %} {{ css | safe }} {% endblock %}
     </style>
+    <style>
+    @font-face {
+  font-family: spaceGrotesk;
+  src: url(/assets/fonts/SpaceGrotesk-Regular.woff);
+  font-weight: normal; }
+
+@font-face {
+  font-family: spaceGrotesk;
+  src: url(/assets/fonts/SpaceGrotesk-SemiBold.woff2);
+  font-weight: bold; }
+    </style>
     <title>{{ pageTitle or siteData.name }}</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
     <link

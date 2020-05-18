@@ -683,16 +683,6 @@ footer {
     .support__content .swiper-container {
       width: 100vw; } }
 
-@font-face {
-  font-family: spaceGrotesk;
-  src: url(fonts/SpaceGrotesk-Regular.woff);
-  font-weight: normal; }
-
-@font-face {
-  font-family: spaceGrotesk;
-  src: url(fonts/SpaceGrotesk-SemiBold.woff2);
-  font-weight: bold; }
-
 html,
 body {
   height: 100%; }

@@ -13,18 +13,6 @@
 @import "./components/home.scss";
 @import "./components/support.scss";
 
-@font-face {
-  font-family: spaceGrotesk;
-  src: url(../font/SpaceGrotesk-Regular.woff);
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: spaceGrotesk;
-  src: url(../font/SpaceGrotesk-SemiBold.woff2);
-  font-weight: bold;
-}
-
 html,
 body {
   height: 100%;
