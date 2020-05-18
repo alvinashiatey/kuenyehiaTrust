@@ -12,29 +12,37 @@ const mouseHandlers = () => {
   const panels = document.querySelector(".display__content");
   const panelSwitchs = document.querySelectorAll(".panel__switch");
   let counter = 0;
+  let animating = false;
   let size;
 
   const carouselMoveNext = () => {
-    if (counter >= carouselSlides.length - 1) return;
-    gsap.to(carousel, 2, {
-      x: `-=${size}`,
-      ease: "power3.inOut",
-    });
-    counter++;
+    if (animating === false) {
+      if (counter >= carouselSlides.length - 1) return;
+      gsap.to(carousel, 2, {
+        x: `-=${size}`,
+        ease: "power3.inOut",
+      });
+      counter++;
+      animating = true;
+      setTimeout(() => (animating = false), 2000);
+    }
   };
 
   const carouselMovePrev = () => {
-    if (counter <= 0) return;
-    gsap.to(carousel, 2, {
-      x: `+=${size}`,
-      ease: "power3.inOut",
-    });
-    counter--;
+    if (animating === false) {
+      if (counter <= 0) return;
+      gsap.to(carousel, 2, {
+        x: `+=${size}`,
+        ease: "power3.inOut",
+      });
+      counter--;
+      animating = true;
+      setTimeout(() => (animating = false), 2000);
+    }
   };
 
   if (carousel) {
     size = carouselSlides[0].clientWidth;
-    console.log(size * carouselSlides.length);
     window.addEventListener("resize", () => {
       size = carousel.clientWidth;
     });
