@@ -4,6 +4,52 @@ import * as p5 from "p5";
 import "/Users/alvinkwabena/Documents/GitHub/kprize/node_modules/normalize.css/normalize.css";
 gsap.registerPlugin(ScrollToPlugin);
 
+const sliderFnc = (() => {
+  const slideLeft = document.querySelectorAll(".move__sec.left");
+  const slideRight = document.querySelectorAll(".move__sec.right");
+  let counter = 0;
+  let animating = false;
+
+  if (slideLeft) {
+    const slideAniLeft = (prizeSlide) => {
+      if (animating === false) {
+        if (counter >= prizeSlide.childNodes.length - 1) return;
+        gsap.to(prizeSlide, 1, {
+          x: `-=${prizeSlide.childNodes[0].clientWidth}`,
+          ease: "power3.inOut",
+        });
+        counter++;
+        animating = true;
+        setTimeout(() => (animating = false), 1000);
+      }
+    };
+    const slideAniRight = (prizeSlide) => {
+      if (animating === false) {
+        if (counter <= 0) return;
+        gsap.to(prizeSlide, 1, {
+          x: `+=${prizeSlide.childNodes[0].clientWidth}`,
+          ease: "power3.inOut",
+        });
+        counter--;
+        animating = true;
+        setTimeout(() => (animating = false), 1000);
+      }
+    };
+
+    slideLeft.forEach((el) => {
+      el.addEventListener("click", () =>
+        slideAniLeft(el.parentNode.childNodes[2])
+      );
+    });
+
+    slideRight.forEach((el) => {
+      el.addEventListener("click", () =>
+        slideAniRight(el.parentNode.childNodes[2])
+      );
+    });
+  }
+})();
+
 const mouseHandlers = () => {
   const carousel = document.querySelector(".carousel");
   const carouselSlides = document.querySelectorAll(".slide__img");
@@ -11,6 +57,7 @@ const mouseHandlers = () => {
   const nextBtn = document.querySelector("#nextbtn");
   const panels = document.querySelector(".display__content");
   const panelSwitchs = document.querySelectorAll(".panel__switch");
+
   let counter = 0;
   let animating = false;
   let size;
@@ -336,10 +383,6 @@ window.onload = function () {
     loop: true,
     lazy: true,
     keyboard: true,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

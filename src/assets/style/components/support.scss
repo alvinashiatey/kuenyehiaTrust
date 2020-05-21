@@ -19,6 +19,10 @@
     margin: 2rem auto;
     width: 75em;
     height: 40em;
+    @media screen and (max-width: $break-medium) {
+      max-width: 60em;
+      margin: 0 auto;
+    }
     .swiper-wrapper {
       #support-img1 {
         background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242397/Kuenyehia%20Trust/carousel/6_yqfmuv.jpg");
@@ -37,7 +41,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         @media screen and (max-width: $break-medium) {
-          width: 65vw;
+          width: 50em;
         }
         @media screen and (max-width: $break-small) {
           width: 100vw;

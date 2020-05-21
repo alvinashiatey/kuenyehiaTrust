@@ -68,17 +68,27 @@ pageTitle: Kuenyehia Prize
             </ul>
             <div class="catalogue">
         
-        <a href="{{lists.catalogue}}" target="_blank">
-        <svg class="icon__pdf">
-            <use
+             <a href="{{lists.catalogue}}" target="_blank">
+              <svg class="icon__pdf">
+                <use
               xlink:href="/assets/imgs/pdf.svg#kt-document-file-pdf"
-            ></use>
-          </svg>
-        {{lists.Year}} Catalogue</a>
-        </div>
+               ></use>
+              </svg>
+               {{lists.Year}} Catalogue </a>
+             </div>
           </div>
+          <div class="prize__container">
+            <div class="move__sec left"></div>
+            <div class="move__sec right"></div>
           <div class="prize-slide">
-            <div class="slide"></div>
+          
+           {% for img in lists.images.list %}
+            <div class="slide" style="background-image: url({{img}})">
+            </div>
+            {%endfor%}
+         
+           
+          </div> 
           </div>
         </div>
         

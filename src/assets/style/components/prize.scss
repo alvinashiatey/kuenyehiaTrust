@@ -33,14 +33,19 @@
     .display__content-alwayson,
     .display__content {
       .artists {
-        display: flex;
-        justify-content: space-between;
+        // display: grid;
+        // grid-template-columns: 1fr 0.7fr;
+        position: relative;
+        @media screen and (max-width: $break-medium) {
+          display: grid;
+          grid-template-rows: 0.5fr 1fr;
+        }
         @media screen and (max-width: $break-small) {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
         }
         .artist__list {
+          @media screen and (max-width: $break-medium) {
+            grid-row: 2;
+          }
           ul {
             padding: 0;
             li {
@@ -54,18 +59,59 @@
             }
           }
         }
-        .prize-slide {
-          width: 18rem;
-          height: 25rem;
-          background: $kr-color;
+        .prize__container {
+          position: absolute;
           overflow: hidden;
+          width: 35rem;
+          height: 24rem;
+          top: 0;
+          bottom: 0;
+          right: -15rem;
+          @media screen and (max-width: $break-medium) {
+            position: relative;
+            right: 0;
+            width: 100%;
+          }
+          .move__sec {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            background: $ko-color;
+            opacity: 0.2;
+            z-index: 1;
+            &.left {
+              cursor: w-resize;
+              left: 0;
+            }
+            &.right {
+              cursor: e-resize;
+              right: 0;
+            }
+          }
+          .prize-slide {
+            display: flex;
+            width: 35rem;
+            height: 24rem;
+            @media screen and (max-width: $break-medium) {
+              min-width: 100%;
+            }
+            .slide {
+              background: $kr-color;
+              min-width: 35rem;
+              height: 24rem;
+              background-repeat: no-repeat;
+              background-size: cover;
+              @media screen and (max-width: $break-medium) {
+                min-width: 100%;
+              }
+            }
+          }
         }
       }
       p,
       a {
         margin: 0;
         font-size: 1.3rem;
-
         line-height: 150%;
         padding-left: 2.2rem;
         @media screen and (max-width: $break-small) {

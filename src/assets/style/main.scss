@@ -46,6 +46,9 @@ body {
   .wrapper {
     max-width: 800px;
     margin: 0 auto;
+    @media screen and (max-width: $break-medium) {
+      max-width: 70em;
+    }
     @media screen and (max-width: $break-small) {
       max-width: $break-small;
     }
