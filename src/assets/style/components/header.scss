@@ -43,7 +43,7 @@
           display: inline-block;
           letter-spacing: $kernS;
           @media screen and (max-width: $break-small) {
-            font-size: 0.6rem;
+            font-size: 1rem;
           }
           &:hover {
             color: $ko-color;

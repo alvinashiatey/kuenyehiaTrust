@@ -1,6 +1,5 @@
 .marq__wrapper {
   background-color: $kb-color;
-  // overflow-x: hidden;
   a {
     color: $kw-color;
     text-transform: uppercase;
@@ -9,6 +8,8 @@
     display: flex;
     white-space: nowrap;
     min-width: 100%;
+    overflow-x: hidden;
+
     .news__message {
       padding-left: 0.6em;
       animation: slide-left 60s linear infinite;

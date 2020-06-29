@@ -3,6 +3,10 @@
     p {
       font-size: 1.3rem;
       line-height: 150%;
+      @media screen and (max-width: $break-small) {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
     }
     a {
       cursor: pointer;
@@ -23,6 +27,7 @@
       max-width: 60em;
       margin: 0 auto;
     }
+
     .swiper-wrapper {
       #support-img1 {
         background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242397/Kuenyehia%20Trust/carousel/6_yqfmuv.jpg");

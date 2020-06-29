@@ -16,6 +16,9 @@
       width: 33rem;
       height: 20rem;
       background-size: cover;
+      @media screen and (max-width: $break-small) {
+        width: 100%;
+      }
     }
     @media screen and (max-width: $break-small) {
       width: 100%;
@@ -41,9 +44,13 @@
     }
     .content {
       width: 20rem;
+
       p {
         font-size: 1.3rem;
         line-height: 150%;
+        @media screen and (max-width: $break-small) {
+          font-size: 1rem;
+        }
       }
     }
   }

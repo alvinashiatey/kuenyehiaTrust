@@ -2,6 +2,10 @@
   color: $kb-color;
   padding: 1rem 3rem;
   border-bottom: 1px solid $ko-color;
+  @media screen and (max-width: $break-small) {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
   .prizepanel__inner {
     margin-bottom: 3.8rem;
     @media screen and (max-width: $break-small) {
