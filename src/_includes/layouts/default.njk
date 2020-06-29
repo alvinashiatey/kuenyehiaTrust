@@ -8,15 +8,17 @@
       {% block maincss %} {{ css | safe }} {% endblock %}
     </style>
     <style>
-    @font-face {
-  font-family: spaceGrotesk;
-  src: url(/assets/fonts/SpaceGrotesk-Regular.woff);
-  font-weight: normal; }
+      @font-face {
+        font-family: spaceGrotesk;
+        src: url(/assets/fonts/SpaceGrotesk-Regular.woff);
+        font-weight: normal;
+      }
 
-@font-face {
-  font-family: spaceGrotesk;
-  src: url(/assets/fonts/SpaceGrotesk-SemiBold.woff2);
-  font-weight: bold; }
+      @font-face {
+        font-family: spaceGrotesk;
+        src: url(/assets/fonts/SpaceGrotesk-SemiBold.woff2);
+        font-weight: bold;
+      }
     </style>
     <title>{{ pageTitle or siteData.name }}</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
@@ -25,17 +27,17 @@
       href="/assets/imgs/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <script
       type="text/javascript"
       src="//maps.googleapis.com/maps/api/js?key=AIzaSyDKdwsFsIw1STe6Xf2zUFH0Sk8n6YQza40"
     ></script>
   </head>
   <body>
-    {% include "header.njk" %}
+    {% include "header.njk" %} {% include "marquee.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}
-    <script src="/assets/index.js"></script>   
+    <script src="/assets/index.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   </body>
 </html>

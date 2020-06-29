@@ -1,16 +1,17 @@
 .marq__wrapper {
-  background-color: $ko-color;
-  color: $kw-color;
-  font-family: helvetica;
-  text-transform: uppercase;
-  overflow-x: hidden;
+  background-color: $kb-color;
+  // overflow-x: hidden;
+  a {
+    color: $kw-color;
+    text-transform: uppercase;
+  }
   .marq {
     display: flex;
     white-space: nowrap;
     min-width: 100%;
     .news__message {
       padding-left: 0.6em;
-      animation: slide-left 40s linear infinite;
+      animation: slide-left 60s linear infinite;
       letter-spacing: 0.2rem;
       @keyframes slide-left {
         from {
