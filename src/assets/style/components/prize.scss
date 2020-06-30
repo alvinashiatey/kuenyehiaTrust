@@ -70,7 +70,8 @@
           @media screen and (max-width: $break-medium) {
             position: relative;
             right: 0;
-            width: 100%;
+            width: 90vw;
+            overflow: hidden;
           }
           .move__sec {
             position: absolute;
