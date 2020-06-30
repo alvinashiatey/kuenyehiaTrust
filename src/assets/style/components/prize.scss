@@ -37,14 +37,10 @@
     .display__content-alwayson,
     .display__content {
       .artists {
-        // display: grid;
-        // grid-template-columns: 1fr 0.7fr;
         position: relative;
         @media screen and (max-width: $break-medium) {
           display: grid;
           grid-template-rows: 0.5fr 1fr;
-        }
-        @media screen and (max-width: $break-small) {
         }
         .artist__list {
           @media screen and (max-width: $break-medium) {
@@ -97,7 +93,7 @@
             width: 35rem;
             height: 24rem;
             @media screen and (max-width: $break-medium) {
-              min-width: 100%;
+              width: auto;
             }
             .slide {
               background: $kr-color;
@@ -106,7 +102,7 @@
               background-repeat: no-repeat;
               background-size: cover;
               @media screen and (max-width: $break-medium) {
-                min-width: 100%;
+                width: auto;
               }
             }
           }
