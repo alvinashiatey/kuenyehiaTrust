@@ -2,13 +2,19 @@
   display: flex;
   align-items: center;
   margin: 4rem 0;
+  @media screen and (max-width: $break-small) {
+    margin: 0 auto;
+  }
   .carousel-container {
-    max-width: 70em;
+    max-width: 64em;
     height: 100%;
     overflow: hidden;
     margin: 2rem auto 0 auto;
     @media screen and (max-width: $break-medium) {
       width: 65vw;
+    }
+    @media screen and (max-width: $break-small) {
+      width: 80vw;
     }
     .carousel {
       display: flex;
@@ -16,7 +22,6 @@
       height: inherit;
       .slide {
         border: none;
-
         max-width: 70em;
         #carousel-img1 {
           background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589239671/Kuenyehia%20Trust/carousel/3_adnul1.jpg");
@@ -36,24 +41,8 @@
           @media screen and (max-width: $break-medium) {
             width: 65vw;
           }
-          &::before {
-            content: "";
-            position: absolute;
-            display: inline-block;
-            width: 100%;
-            height: 99.6%;
-            background: $ko-color;
-            opacity: 30%;
-          }
-          img {
-            mix-blend-mode: multiply;
-            display: block;
-            max-width: 64.42em;
-            min-height: 20em;
-            // object-fit: fill;s
-            @media screen and (max-width: $break-medium) {
-              width: 65vw;
-            }
+          @media screen and (max-width: $break-small) {
+            width: 80vw;
           }
         }
         .description {
@@ -67,14 +56,14 @@
     }
   }
   .navi {
-    width: 50px;
-    height: 50px;
-    margin: auto;
+    width: auto;
+    height: auto;
     cursor: pointer;
     .button {
       width: 2rem;
       display: block;
       margin: auto;
+
       path {
         fill: none;
         stroke-width: 1.5px;
@@ -90,10 +79,16 @@
     @media screen and (min-width: $break-medium) {
       padding-right: 2rem;
     }
+    @media screen and (max-width: $break-small) {
+      padding-right: 0rem;
+    }
   }
   .next {
     @media screen and (min-width: $break-medium) {
       padding-left: 2rem;
+    }
+    @media screen and (max-width: $break-small) {
+      padding-right: 0rem;
     }
   }
 }
