@@ -10,25 +10,25 @@
     }
     a {
       cursor: pointer;
-      color: $ko-color;
+      color: $kw-color;
       display: inline-block;
-
       &:hover {
         transform: rotate(-5deg);
         transition: all 300ms $kease;
       }
     }
-  }
-  .swiper-container {
-    margin: 2rem auto;
-    width: 75em;
-    height: 40em;
-    @media screen and (max-width: $break-medium) {
-      max-width: 60em;
-      margin: 0 auto;
+    .donate__btn {
+      display: block;
+      text-align: center;
+      width: 6rem;
+      margin: 0.5rem auto;
+      background: $kr-color;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
     }
-
-    .swiper-wrapper {
+  }
+  .carousel-setup {
+    .carousel-container {
       #support-img1 {
         background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242397/Kuenyehia%20Trust/carousel/6_yqfmuv.jpg");
       }
@@ -38,26 +38,6 @@
       #support-img3 {
         background-image: url("https://res.cloudinary.com/arlkobe23/image/upload/v1589242559/Kuenyehia%20Trust/carousel/Felix57_s0yoop.jpg");
       }
-      .slide__img {
-        margin: 0 auto;
-        position: relative;
-        width: 64.42em;
-        height: 40em;
-        background-repeat: no-repeat;
-        background-size: cover;
-        @media screen and (max-width: $break-medium) {
-          width: 50em;
-        }
-        @media screen and (max-width: $break-small) {
-          width: 100vw;
-        }
-      }
-    }
-    .btn {
-      color: $kr-color;
-    }
-    @media screen and (max-width: $break-small) {
-      width: 100vw;
     }
   }
 }
