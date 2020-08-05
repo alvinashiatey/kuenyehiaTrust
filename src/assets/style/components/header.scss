@@ -54,5 +54,23 @@
         }
       }
     }
+    .apply-btn {
+      font-weight: bold;
+      position: relative;
+      &::after {
+        content: "";
+        background: rgb(153, 35, 105);
+        background: linear-gradient(
+          90deg,
+          rgba(153, 35, 105, 1) 0%,
+          rgba(246, 147, 49, 1) 100%
+        );
+        position: absolute;
+        width: 100%;
+        height: 0.2rem;
+        left: 0;
+        bottom: 0;
+      }
+    }
   }
 }
