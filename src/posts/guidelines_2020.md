@@ -77,6 +77,8 @@ Should any work(s) be shortlisted, the entrant shall not be allowed to withdraw 
 
 Should any work(s) be stolen, disappear or be damaged, the entrant will be entitled to compensation up to the insured amount only. If the work that is stolen lost or damaged is any of the three (3) entry pieces by the ultimate winner and the two runners-up, then the Kuenyehia Prize reserves the right, as owner of the pieces, to receive the compensation and to determine unilaterally how much of the compensation should go to the entrant.
 
+We reserve the right to modify the terms and conditions at any point in time.
+
 ## Have questions?
 
 Contact us via:

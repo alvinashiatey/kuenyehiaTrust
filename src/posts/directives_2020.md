@@ -75,6 +75,8 @@ Si une ou plusieurs oeuvres sont présélectionnées, le participant ne sera pas
 
 En cas de vol, de disparition ou d'endommagement de l'oeuvre (s), l’artiste aura droit à une indemnité à hauteur du montant assuré uniquement. Si l'oeuvre volée perdue ou endommagée est l'une des trois (3) oeuvres d’art du gagnant final et des deux finalistes, alors le Kuenyehia Trust se réserve le droit, en tant que propriétaire des pièces, de recevoir la compensation et de déterminer unilatéralement quelle part de la compensation devrait aller à l’artiste.
 
+Nous nous réservons le droit de modifier les termes et conditions à tout moment.
+
 ## Des questions ?
 
 N’hésitez pas à nous contacter via :
@@ -82,4 +84,3 @@ N’hésitez pas à nous contacter via :
 - WhatsApp: [+233 242 04 16 45](tel:+233242041645)
 - Email: [info@kuenyehiaprize.org](mailto:info@kuenyehiaprize.org)
 - Ou rendez-vous sur notre site internet: [www.kuenyehiaprize.org](http://kuenyehiaprize.org)
-  
